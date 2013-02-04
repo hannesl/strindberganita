@@ -316,7 +316,7 @@
         <script type="text/html" id="timeline_tmpl">
           <ul class="timeline">
             <% for ( var i = 0; i < dates.length; i++ ) { %>
-              <li><%=dates[i].event.name%></li>
+              <li class="<%=dates[i].elClass%>"><%=dates[i].dateName%> <%=dates[i].event.name%></li>
             <% } %>
           </ul>
         </script>

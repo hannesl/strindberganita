@@ -395,3 +395,10 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
+.date.passed {
+  opacity: .6;
+}
+.date.next-event {
+  border: 1px solid #ccc;
+}

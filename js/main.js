@@ -36,8 +36,17 @@
 (function($) {
   "use strict";
 
-  var events = [];
-  var dates = [];
+  // Parse a date in yyyy-mm-dd hh:mm format.
+  var parseDate = function parseDate(input) {
+    var parts = input.match(/(\d+)/g);
+    // new Date(year, month [, date [, hours[, minutes[, seconds[, ms]]]]])
+    return new Date(parts[0], parts[1]-1, parts[2], parts[3], parts[4]); // months are 0-based
+  }
+
+  var events = [],
+      dates = [],
+      now = new Date(),
+      nextEvent;
 
   var processEvent = function processEvent() {
     var event = { dates: [] },
@@ -45,10 +54,11 @@
 
     event.el = this;
     event.name = $event.find(".event-name").text();
+    event.name = event.name.charAt(0).toUpperCase() + event.name.slice(1);
     event.time = $event.find("footer p time").attr("datetime");
 
     $event.find(".dates li").each(function() {
-      var date = {},
+      var date = { elClass: "date" },
           $date = $(this),
           $time_elements = $date.find("time");
 
@@ -57,9 +67,21 @@
         date.time = $time_elements.last().attr("datetime");
       }
       else {
-        date.time = event.time;
+        date.time = event.time || "00:00";
       }
+      date.dateObject = parseDate(date.date + " " + date.time);
+      date.dateName = $time_elements.first().text();
       date.event = event;
+
+      if (date.dateObject > now) {
+        date.elClass += " upcoming";
+        if (!nextEvent || nextEvent.dateObject > date.dateObject) {
+          nextEvent = date;
+        }
+      }
+      else {
+        date.elClass += " passed";
+      }
 
       event.dates.push(date);
       dates.push(date);
@@ -67,10 +89,18 @@
 
     events.push(event);
 
+    // Sort the dates.
+    dates.sort(function(a, b) {
+      a = a.dateObject;
+      b = b.dateObject;
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+
   }
 
   $(document).ready(function() {
     $(".main").find("article.event-description").each(processEvent);
+    nextEvent.elClass += " next-event";
 
     $(".main").append(tmpl("timeline_tmpl", { dates: dates }));
   });
