@@ -170,7 +170,45 @@ nav a:hover {
   border: 1px solid #ccc;
 }
 
+.timeline {
+  padding-top: 40px;
+  position: relative;
+}
 
+.timeline h2 {
+  position: absolute;
+  width: 47%;
+  top: 0;
+}
+.timeline h2.timeline-walks {
+  right: 0;
+}
+.timeline h2.timeline-excursions {
+  left: 0;
+  text-align: right;
+}
+
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+.timeline li {
+  width: 47%;
+}
+
+.event-type-walk {
+  margin: 0 0 0 auto;
+  text-align: left;
+}
+
+.event-type-excursion {
+  margin: 0 auto 0 0;
+  text-align: right;
+}
+
+.date-name {
+  font-weight: bold;
+}
 
 /* ==========================================================================
    Media Queries

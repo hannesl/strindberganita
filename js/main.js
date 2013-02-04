@@ -51,11 +51,13 @@
 
   var processEvent = function processEvent() {
     var event = { dates: [] },
-        $event = $(this);
+        $event = $(this),
+        eventType = $event.data("event-type");
 
     event.el = this;
     event.name = $event.find(".event-name").text();
     event.name = event.name.charAt(0).toUpperCase() + event.name.slice(1);
+    event.quote = $event.find("h1").first().text();
     event.time = $event.find("footer p time").attr("datetime");
 
     $event.find(".dates li").each(function() {
@@ -73,6 +75,7 @@
       date.dateObject = parseDate(date.date + " " + date.time);
       date.dateName = $time_elements.first().text();
       date.event = event;
+      date.elClass += " event-type-" + eventType;
 
       if (date.dateObject > now) {
         date.elClass += " upcoming";
@@ -99,10 +102,19 @@
 
   }
 
+  // Process the event content on page load.
   $(document).ready(function() {
-    $(".main").find("article.event-description").each(processEvent);
+
+    $(".main").find(".walks article.event-description")
+      .data("event-type", "walk")
+      .each(processEvent);
+    $(".main").find(".excursions article.event-description")
+      .data("event-type", "excursion")
+      .each(processEvent);
+
     nextEvent.elClass += " next-event";
 
+    // Render and insert the timeline template.
     $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
   });
 })(jQuery)

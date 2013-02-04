@@ -298,9 +298,15 @@
 
             <script type="text/html" id="timeline_tmpl">
               <section class="timeline">
+                <h2 class="timeline-walks">Vandringar</h2>
+                <h2 class="timeline-excursions">Utflykter</h2>
                 <ul class="dates">
                   <% for ( var i = 0; i < dates.length; i++ ) { %>
-                    <li class="<%=dates[i].elClass%>"><%=dates[i].dateName%> <%=dates[i].event.name%></li>
+                    <li class="<%=dates[i].elClass%>">
+                      <span class="date-name"><%=dates[i].dateName%></span>
+                      <span class="event-name"><%=dates[i].event.name%></span>
+                      <em class="quote"><%=dates[i].event.quote%></em>
+                    </li>
                   <% } %>
                 </ul>
               </section>
