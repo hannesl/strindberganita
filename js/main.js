@@ -33,6 +33,7 @@
     };
 })();
 
+// Event timeline generation.
 (function($) {
   "use strict";
 
@@ -102,6 +103,6 @@
     $(".main").find("article.event-description").each(processEvent);
     nextEvent.elClass += " next-event";
 
-    $(".main").append(tmpl("timeline_tmpl", { dates: dates }));
+    $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
   });
 })(jQuery)
