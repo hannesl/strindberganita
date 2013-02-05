@@ -175,6 +175,19 @@ nav a:hover {
   position: relative;
 }
 
+.timeline:before {
+  background: #ccc;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: 0;
+  width: 10px;
+
+}
+
 .timeline h2 {
   position: absolute;
   width: 47%;
@@ -208,6 +221,16 @@ nav a:hover {
 
 .date-name {
   font-weight: bold;
+}
+
+.timeline .today {
+  background: #999;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 20%;
 }
 
 /* ==========================================================================

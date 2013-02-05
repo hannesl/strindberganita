@@ -116,5 +116,13 @@
 
     // Render and insert the timeline template.
     $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
+
+    // Insert the 'today' marker.
+    var todayVars = {
+      year: now.getFullYear(),
+      month: ("0" + (now.getMonth() + 1)).slice(-2),
+      day: ("0" + now.getDate()).slice(-2)
+    }
+    $(".timeline").find(".next-event").before(tmpl("today_tmpl", todayVars ));
   });
 })(jQuery)
