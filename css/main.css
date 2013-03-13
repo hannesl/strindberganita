@@ -166,7 +166,7 @@ nav a:hover {
 .date.passed {
   opacity: .6;
 }
-.date.next-event {
+.date.next-event a {
   border: 1px solid #ccc;
 }
 
@@ -185,7 +185,6 @@ nav a:hover {
   position: absolute;
   top: 0;
   width: 10px;
-
 }
 
 .timeline h2 {
@@ -206,15 +205,19 @@ nav a:hover {
   padding: 0;
 }
 .timeline li {
+}
+
+.timeline li a {
+  display: block;
   width: 47%;
 }
 
-.event-type-walk {
+.event-type-walk a {
   margin: 0 0 0 auto;
   text-align: left;
 }
 
-.event-type-excursion {
+.event-type-excursion a {
   margin: 0 auto 0 0;
   text-align: right;
 }
@@ -231,6 +234,14 @@ nav a:hover {
   position: relative;
   text-align: center;
   width: 20%;
+}
+
+.timeline li .description {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px;
+  position: relative;
 }
 
 /* ==========================================================================

@@ -59,6 +59,7 @@
     event.name = event.name.charAt(0).toUpperCase() + event.name.slice(1);
     event.quote = $event.find("h1").first().text();
     event.time = $event.find("footer p time").attr("datetime");
+    event.id = $event.attr("id");
 
     $event.find(".dates li").each(function() {
       var date = { elClass: "date" },
@@ -124,5 +125,38 @@
       day: ("0" + now.getDate()).slice(-2)
     }
     $(".timeline").find(".next-event").before(tmpl("today_tmpl", todayVars ));
+
+    var showDate = function showDate(link) {
+      var $date = $(link).parents("li.date"),
+          $event = $($(link).attr("href"));
+
+      $(".timeline .date").removeClass("active");
+      $date
+        .addClass("active")
+        .find(".description")
+          .html($event.html())
+          .slideDown();
+    }
+
+    var hideDates = function hideDates() {
+      $(".timeline .date:not(.active) .description").slideUp(function() {
+        $(this).text("");
+      });
+    }
+
+    $(".timeline li.date a").on("click", function(e) {
+      showDate(this);
+      hideDates();
+      e.preventDefault();
+    });
+
+    $("body").on("click", function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.hasClass("date") && $clicked.parents(".date").length === 0) {
+        $(".timeline .date").removeClass("active");
+        hideDates();
+      }
+    });
+
   });
 })(jQuery)
