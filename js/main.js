@@ -105,7 +105,8 @@
 
   // Process the event content on page load.
   $(document).ready(function() {
-    var $timeline;
+    var $timeline,
+        $navLinks = $('#navigation a');
 
     $(".main").find(".walks article.event-description")
       .data("event-type", "walk")
@@ -128,6 +129,31 @@
     }
     $timeline.find(".next-event").before(tmpl("today_tmpl", todayVars ));
 
+    // Handle navigation.
+    $navLinks.first().addClass('active');
+
+    var navigate = function navigate() {
+      $navLinks.removeClass('active');
+      switch (window.location.hash) {
+        case '#info':
+          $('.walks, .excursions').show();
+          $timeline.hide();
+          $navLinks.filter('[href="#info"]').addClass('active');
+          break;
+        default:
+          $timeline.show();
+          $('.walks, .excursions').hide();
+          $navLinks.first().addClass('active');
+      }
+    }
+
+    // Trigge navigation on load and hashchange.
+    navigate();
+    if ("onhashchange" in window) {
+      window.onhashchange = navigate;
+    }
+
+    // Handle date descriptions.
     var showDate = function showDate(link) {
       var $date = $(link).parents("li.date"),
           $event = $($(link).attr("href")),
