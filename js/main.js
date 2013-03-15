@@ -105,6 +105,7 @@
 
   // Process the event content on page load.
   $(document).ready(function() {
+    var $timeline;
 
     $(".main").find(".walks article.event-description")
       .data("event-type", "walk")
@@ -117,6 +118,7 @@
 
     // Render and insert the timeline template.
     $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
+    $timeline = $(".timeline")
 
     // Insert the 'today' marker.
     var todayVars = {
@@ -124,38 +126,39 @@
       month: ("0" + (now.getMonth() + 1)).slice(-2),
       day: ("0" + now.getDate()).slice(-2)
     }
-    $(".timeline").find(".next-event").before(tmpl("today_tmpl", todayVars ));
+    $timeline.find(".next-event").before(tmpl("today_tmpl", todayVars ));
 
     var showDate = function showDate(link) {
       var $date = $(link).parents("li.date"),
-          $event = $($(link).attr("href"));
+          $event = $($(link).attr("href")),
+          $closeLink;
 
-      $(".timeline .date").removeClass("active");
+      $closeLink = $('<a href="#">Stäng</a>')
+        .click(function(e) {
+          $timeline.find(".date").removeClass("active");
+          hideDates();
+          e.preventDefault();
+        });
+
+      $timeline.find(".date").removeClass("active");
       $date
         .addClass("active")
         .find(".description")
           .html($event.html())
+          .append($closeLink)
           .slideDown();
     }
 
     var hideDates = function hideDates() {
-      $(".timeline .date:not(.active) .description").slideUp(function() {
+      $timeline.find(".date:not(.active) .description").slideUp(function() {
         $(this).text("");
       });
     }
 
-    $(".timeline li.date a").on("click", function(e) {
+    $timeline.find("li.date a").on("click", function(e) {
       showDate(this);
       hideDates();
       e.preventDefault();
-    });
-
-    $("body").on("click", function(e) {
-      var $clicked = $(e.target);
-      if (!$clicked.hasClass("date") && $clicked.parents(".date").length === 0) {
-        $(".timeline .date").removeClass("active");
-        hideDates();
-      }
     });
 
   });
