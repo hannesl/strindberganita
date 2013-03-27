@@ -1,0 +1,100 @@
+@import "normalize";
+@import "icons";
+@import "main";
+
+
+.js {
+  .walks,
+  .excursions {
+    display: none;
+  }
+}
+
+.date {
+  &.passed {
+    opacity: .6;
+  }
+  &.next-event a {
+    border: 1px solid #ccc;
+  }
+}
+
+.timeline {
+  padding-top: 40px;
+  position: relative;
+
+  &:before {
+    background: #ccc;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+  }
+
+  h2 {
+    position: absolute;
+    width: 47%;
+    top: 0;
+    &.timeline-walks {
+      right: 0;
+    }
+    &.timeline-excursions {
+      left: 0;
+      text-align: right;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    a {
+      display: block;
+      width: 47%;
+    }
+  }
+
+  .event-type-walk a {
+    margin: 0 0 0 auto;
+    text-align: left;
+  }
+
+  .event-type-excursion a {
+    margin: 0 auto 0 0;
+    text-align: right;
+  }
+
+  .date-name {
+    font-weight: bold;
+  }
+
+  .today {
+    background: #fff;
+    border: 1px solid #999;
+    color: #999;
+    font-size: 12px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 7em;
+  }
+  .today i.foundicon-right-arrow {
+    color: #ccc;
+    font-size: 1.6em;
+    left: -1.4em;
+    position: absolute;
+  }
+
+  li .description {
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    padding: 10px;
+    position: relative;
+  }
+}
