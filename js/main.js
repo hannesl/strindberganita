@@ -134,15 +134,18 @@
 
     var navigate = function navigate() {
       $navLinks.removeClass('active');
+      $('section').hide();
       switch (window.location.hash) {
         case '#info':
           $('.walks, .excursions').show();
-          $timeline.hide();
           $navLinks.filter('[href="#info"]').addClass('active');
+          break;
+        case '#about':
+          $('.about').show();
+          $navLinks.filter('[href="#about"]').addClass('active');
           break;
         default:
           $timeline.show();
-          $('.walks, .excursions').hide();
           $navLinks.first().addClass('active');
       }
     }
