@@ -13,6 +13,7 @@ textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
+  font-family: Georgia, 'Bitstream Vera Serif', serif;
 }
 
 ::-moz-selection {
@@ -55,75 +56,52 @@ textarea {
   padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-  border-bottom: 20px solid #e44d26;
-}
-
-.footer-container {
-  border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container {
-  background: #f16529;
-}
-
-.title {
-  color: white;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
 
-nav ul {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
+nav {
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.js nav ul {
-  display: block;
-}
+  .js & ul {
+    display: block;
+  }
 
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
+  a {
+    color: #222;
+    font-size: 1.2em;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
 
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    &:hover,
+    &:visited {
+    }
+    &:hover {
+    }
 
-  color: white;
-  background: #e44d26;
-}
+    &:before {
+      @include inline-block();
+      color: #ccc;
+      content: "☛";
+      font-size: 1.5em;
+      margin-right: 0.3em;
+      vertical-align: baseline;
+    }
+    &:after {
+      @include inline-block();
+      font-size: 1.6em;
+      content: " ";
+      margin-left: 1.1em;
+    }
+  }
 
-nav a:hover,
-nav a:visited {
-  color: white;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 /* ==============
@@ -139,16 +117,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-  color: white;
   padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-  padding-top: 20px;
 }
 
 /* ==========================================================================
@@ -191,16 +160,6 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-  .header-container {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-       -moz-box-shadow: 0 5px 10px #aaa;
-            box-shadow: 0 5px 10px #aaa;
-  }
 
 /* ============
     WIDE: Menu

@@ -17,7 +17,8 @@ main,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -27,7 +28,8 @@ canvas,
 video {
   display: inline-block;
   *display: inline;
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -35,14 +37,16 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* ==========================================================================
    Base
@@ -59,7 +63,8 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Address `font-family` inconsistency between `textarea` and other form
@@ -70,13 +75,15 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Links
@@ -85,14 +92,16 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted; }
+  outline: thin dotted;
+}
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* ==========================================================================
    Typography
@@ -104,49 +113,59 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 h2 {
   font-size: 1.5em;
-  margin: 0.83em 0; }
+  margin: 0.83em 0;
+}
 
 h3 {
   font-size: 1.17em;
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 h4 {
   font-size: 1em;
-  margin: 1.33em 0; }
+  margin: 1.33em 0;
+}
 
 h5 {
   font-size: 0.83em;
-  margin: 1.67em 0; }
+  margin: 1.67em 0;
+}
 
 h6 {
   font-size: 0.67em;
-  margin: 2.33em 0; }
+  margin: 2.33em 0;
+}
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 blockquote {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address differences between Firefox and other browsers.
@@ -155,21 +174,24 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address styling not present in IE 6/7/8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address margins set differently in IE 6/7.
  */
 p,
 pre {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -180,7 +202,8 @@ pre,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /**
  * Improve readability of pre-formatted text in all browsers.
@@ -188,13 +211,15 @@ samp {
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 /**
  * Address `quotes` property not supported in Safari 4.
@@ -202,13 +227,15 @@ q {
 q:before,
 q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -218,13 +245,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* ==========================================================================
    Lists
@@ -236,10 +266,12 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 dd {
-  margin: 0 0 0 40px; }
+  margin: 0 0 0 40px;
+}
 
 /**
  * Address paddings set differently in IE 6/7.
@@ -247,7 +279,8 @@ dd {
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 40px;
+}
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -255,7 +288,8 @@ ul {
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none; }
+  list-style-image: none;
+}
 
 /* ==========================================================================
    Embedded content
@@ -268,13 +302,15 @@ img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Figures
@@ -283,7 +319,8 @@ svg:not(:root) {
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 figure {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Forms
@@ -292,7 +329,8 @@ figure {
  * Correct margin displayed oddly in IE 6/7.
  */
 form {
-  margin: 0; }
+  margin: 0;
+}
 
 /**
  * Define consistent border, margin, and padding.
@@ -300,7 +338,8 @@ form {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -314,7 +353,8 @@ legend {
   white-space: normal;
   /* 2 */
   *margin-left: -7px;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * 1. Correct font size not being inherited in all browsers.
@@ -333,7 +373,8 @@ textarea {
   vertical-align: baseline;
   /* 3 */
   *vertical-align: middle;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -341,7 +382,8 @@ textarea {
  */
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -351,7 +393,8 @@ input {
  */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -371,14 +414,16 @@ input[type="submit"] {
   cursor: pointer;
   /* 3 */
   *overflow: visible;
-  /* 4 */ }
+  /* 4 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
@@ -395,7 +440,8 @@ input[type="radio"] {
   *height: 13px;
   /* 3 */
   *width: 13px;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -408,7 +454,8 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -416,7 +463,8 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Remove inner padding and border in Firefox 3+.
@@ -424,7 +472,8 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
@@ -434,7 +483,8 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* ==========================================================================
    Tables
@@ -444,7 +494,8 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* ==========================================================================
    Icons
@@ -454,7 +505,8 @@ table {
   src: url("foundation_icons_general/general_foundicons.eot");
   src: url("foundation_icons_general/general_foundicons.eot?#iefix") format("embedded-opentype"), url("foundation_icons_general/general_foundicons.woff") format("woff"), url("foundation_icons_general/general_foundicons.ttf") format("truetype"), url("foundation_icons_general/general_foundicons.svg#GeneralFoundicons") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 [class*="foundicon-"] {
   display: inline;
@@ -464,155 +516,204 @@ table {
   vertical-align: baseline;
   background-image: none;
   background-position: 0 0;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+}
 
 [class*="foundicon-"]:before {
   font-family: "GeneralFoundicons";
   font-weight: normal;
   font-style: normal;
-  text-decoration: inherit; }
+  text-decoration: inherit;
+}
 
 /* icons */
 .foundicon-settings:before {
-  content: "\f000"; }
+  content: "\f000";
+}
 
 .foundicon-heart:before {
-  content: "\f001"; }
+  content: "\f001";
+}
 
 .foundicon-star:before {
-  content: "\f002"; }
+  content: "\f002";
+}
 
 .foundicon-plus:before {
-  content: "\f003"; }
+  content: "\f003";
+}
 
 .foundicon-minus:before {
-  content: "\f004"; }
+  content: "\f004";
+}
 
 .foundicon-checkmark:before {
-  content: "\f005"; }
+  content: "\f005";
+}
 
 .foundicon-remove:before {
-  content: "\f006"; }
+  content: "\f006";
+}
 
 .foundicon-mail:before {
-  content: "\f007"; }
+  content: "\f007";
+}
 
 .foundicon-calendar:before {
-  content: "\f008"; }
+  content: "\f008";
+}
 
 .foundicon-page:before {
-  content: "\f009"; }
+  content: "\f009";
+}
 
 .foundicon-tools:before {
-  content: "\f00a"; }
+  content: "\f00a";
+}
 
 .foundicon-globe:before {
-  content: "\f00b"; }
+  content: "\f00b";
+}
 
 .foundicon-home:before {
-  content: "\f00c"; }
+  content: "\f00c";
+}
 
 .foundicon-quote:before {
-  content: "\f00d"; }
+  content: "\f00d";
+}
 
 .foundicon-people:before {
-  content: "\f00e"; }
+  content: "\f00e";
+}
 
 .foundicon-monitor:before {
-  content: "\f00f"; }
+  content: "\f00f";
+}
 
 .foundicon-laptop:before {
-  content: "\f010"; }
+  content: "\f010";
+}
 
 .foundicon-phone:before {
-  content: "\f011"; }
+  content: "\f011";
+}
 
 .foundicon-cloud:before {
-  content: "\f012"; }
+  content: "\f012";
+}
 
 .foundicon-error:before {
-  content: "\f013"; }
+  content: "\f013";
+}
 
 .foundicon-right-arrow:before {
-  content: "\f014"; }
+  content: "\f014";
+}
 
 .foundicon-left-arrow:before {
-  content: "\f015"; }
+  content: "\f015";
+}
 
 .foundicon-up-arrow:before {
-  content: "\f016"; }
+  content: "\f016";
+}
 
 .foundicon-down-arrow:before {
-  content: "\f017"; }
+  content: "\f017";
+}
 
 .foundicon-trash:before {
-  content: "\f018"; }
+  content: "\f018";
+}
 
 .foundicon-add-doc:before {
-  content: "\f019"; }
+  content: "\f019";
+}
 
 .foundicon-edit:before {
-  content: "\f01a"; }
+  content: "\f01a";
+}
 
 .foundicon-lock:before {
-  content: "\f01b"; }
+  content: "\f01b";
+}
 
 .foundicon-unlock:before {
-  content: "\f01c"; }
+  content: "\f01c";
+}
 
 .foundicon-refresh:before {
-  content: "\f01d"; }
+  content: "\f01d";
+}
 
 .foundicon-paper-clip:before {
-  content: "\f01e"; }
+  content: "\f01e";
+}
 
 .foundicon-video:before {
-  content: "\f01f"; }
+  content: "\f01f";
+}
 
 .foundicon-photo:before {
-  content: "\f020"; }
+  content: "\f020";
+}
 
 .foundicon-graph:before {
-  content: "\f021"; }
+  content: "\f021";
+}
 
 .foundicon-idea:before {
-  content: "\f022"; }
+  content: "\f022";
+}
 
 .foundicon-mic:before {
-  content: "\f023"; }
+  content: "\f023";
+}
 
 .foundicon-cart:before {
-  content: "\f024"; }
+  content: "\f024";
+}
 
 .foundicon-address-book:before {
-  content: "\f025"; }
+  content: "\f025";
+}
 
 .foundicon-compass:before {
-  content: "\f026"; }
+  content: "\f026";
+}
 
 .foundicon-flag:before {
-  content: "\f027"; }
+  content: "\f027";
+}
 
 .foundicon-location:before {
-  content: "\f028"; }
+  content: "\f028";
+}
 
 .foundicon-clock:before {
-  content: "\f029"; }
+  content: "\f029";
+}
 
 .foundicon-folder:before {
-  content: "\f02a"; }
+  content: "\f02a";
+}
 
 .foundicon-inbox:before {
-  content: "\f02b"; }
+  content: "\f02b";
+}
 
 .foundicon-website:before {
-  content: "\f02c"; }
+  content: "\f02c";
+}
 
 .foundicon-smiley:before {
-  content: "\f02d"; }
+  content: "\f02d";
+}
 
 .foundicon-search:before {
-  content: "\f02e"; }
+  content: "\f02e";
+}
 
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
@@ -622,19 +723,24 @@ button,
 input,
 select,
 textarea {
-  color: #222; }
+  color: #222;
+}
 
 body {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: Georgia, 'Bitstream Vera Serif', serif;
+}
 
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 hr {
   display: block;
@@ -642,50 +748,29 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial; }
-
-.wrapper {
-  width: 90%;
-  margin: 0 5%; }
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-.header-container {
-  border-bottom: 20px solid #e44d26; }
-
-.footer-container {
-  border-top: 20px solid #e44d26; }
-
-.header-container,
-.footer-container {
-  background: #f16529; }
-
-.title {
-  color: white; }
+  padding: 0.2em 0;
+}
 
 /* ==============
     MOBILE: Menu
@@ -693,46 +778,63 @@ body {
 nav ul {
   display: none;
   margin: 0;
-  padding: 0; }
-
+  padding: 0;
+}
 .js nav ul {
-  display: block; }
-
+  display: block;
+}
 nav a {
+  color: #222;
+  font-size: 1.2em;
+  font-style: italic;
   display: block;
   margin-bottom: 10px;
-  padding: 15px 0;
   text-align: center;
   text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #e44d26; }
-
-nav a:hover,
-nav a:visited {
-  color: white; }
-
-nav a:hover {
-  text-decoration: underline; }
+}
+nav a:before {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  color: #ccc;
+  content: "☛";
+  font-size: 1.5em;
+  margin-right: 0.3em;
+  vertical-align: baseline;
+}
+nav a:before {
+  *display: inline;
+}
+nav a:after {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  font-size: 1.6em;
+  content: " ";
+  margin-left: 1.1em;
+}
+nav a:after {
+  *display: inline;
+}
 
 /* ==============
     MOBILE: Main
    ============== */
 .main {
-  padding: 30px 0; }
+  padding: 30px 0;
+}
 
 .main article h1 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .footer-container footer {
-  color: white;
-  padding: 20px 0; }
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-.ie7 .title {
-  padding-top: 20px; }
+  padding: 20px 0;
+}
 
 /* ==========================================================================
    Media Queries
@@ -746,44 +848,45 @@ nav a:hover {
     width: 27%;
     margin: 0 1.7%;
     padding: 25px 2%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+  }
 
   nav li:first-child a {
-    margin-left: 0; }
+    margin-left: 0;
+  }
 
   nav li:last-child a {
-    margin-right: 0; }
+    margin-right: 0;
+  }
 
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
   nav ul li {
-    display: inline; }
+    display: inline;
+  }
 
   .oldie nav a {
-    margin: 0 0.7%; } }
+    margin: 0 0.7%;
+  }
+}
 @media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  .header-container {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa; }
-
   /* ============
       WIDE: Menu
      ============ */
   .title {
-    float: left; }
+    float: left;
+  }
 
   nav {
     float: right;
-    width: 38%; }
+    width: 38%;
+  }
 
   /* ============
       WIDE: Main
-     ============ */ }
+     ============ */
+}
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
@@ -791,7 +894,9 @@ nav a:hover {
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -799,17 +904,20 @@ nav a:hover {
   background-color: transparent;
   border: 0;
   overflow: hidden;
-  *text-indent: -9999px; }
+  *text-indent: -9999px;
+}
 
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%; }
+  height: 150%;
+}
 
 .hidden {
   display: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .visuallyhidden {
   border: 0;
@@ -819,7 +927,8 @@ nav a:hover {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -828,21 +937,26 @@ nav a:hover {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  display: table; }
+  display: table;
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 .clearfix {
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /* ==========================================================================
    Print styles
@@ -853,17 +967,21 @@ nav a:hover {
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links for images, or javascript/internal links
@@ -871,99 +989,124 @@ nav a:hover {
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   thead {
     display: table-header-group;
-    /* h5bp.com/t */ }
+    /* h5bp.com/t */
+  }
 
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
+    margin: 0.5cm;
+}
 
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}
 .js .walks,
 .js .excursions,
 .js .about {
-  display: none; }
+  display: none;
+}
 
 .date.passed {
-  opacity: .6; }
-.date.next-event a {
-  border: 1px solid #ccc; }
+  opacity: .6;
+}
+.date.next-event none {
+  border: 1px solid #ccc;
+}
 
 .timeline {
   padding-top: 40px;
-  position: relative; }
-  .timeline:before {
-    background: #ccc;
-    content: " ";
-    display: block;
-    height: 100%;
-    left: 50%;
-    margin-left: -5px;
-    position: absolute;
-    top: 0;
-    width: 10px; }
-  .timeline h2 {
-    position: absolute;
-    width: 47%;
-    top: 0; }
-    .timeline h2.timeline-walks {
-      right: 0; }
-    .timeline h2.timeline-excursions {
-      left: 0;
-      text-align: right; }
-  .timeline ul {
-    list-style-type: none;
-    padding: 0; }
-  .timeline li a {
-    display: block;
-    width: 47%; }
-  .timeline .event-type-walk a {
-    margin: 0 0 0 auto;
-    text-align: left; }
-  .timeline .event-type-excursion a {
-    margin: 0 auto 0 0;
-    text-align: right; }
-  .timeline .date-name {
-    font-weight: bold; }
-  .timeline .today {
-    background: #fff;
-    border: 1px solid #999;
-    color: #999;
-    font-size: 12px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    width: 7em; }
-  .timeline .today i.foundicon-right-arrow {
-    color: #ccc;
-    font-size: 1.6em;
-    left: -1.4em;
-    position: absolute; }
-  .timeline li .description {
-    background: #fff;
-    border: 1px solid #ccc;
-    display: none;
-    padding: 10px;
-    position: relative; }
+  position: relative;
+}
+.timeline:before {
+  background: #ccc;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+.timeline h2 {
+  position: absolute;
+  width: 47%;
+  top: 0;
+}
+.timeline h2.timeline-walks {
+  right: 0;
+}
+.timeline h2.timeline-excursions {
+  left: 0;
+  text-align: right;
+}
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+.timeline li a {
+  display: block;
+  width: 47%;
+}
+.timeline .event-type-walk a {
+  margin: 0 0 0 auto;
+  text-align: left;
+}
+.timeline .event-type-excursion a {
+  margin: 0 auto 0 0;
+  text-align: right;
+}
+.timeline .date-name {
+  font-weight: bold;
+}
+.timeline .today {
+  background: #fff;
+  border: 1px solid #999;
+  color: #999;
+  font-size: 12px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 7em;
+}
+.timeline .today i.foundicon-right-arrow {
+  color: #ccc;
+  font-size: 1.6em;
+  left: -1.4em;
+  position: absolute;
+}
+.timeline li .description {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px;
+  position: relative;
+}
