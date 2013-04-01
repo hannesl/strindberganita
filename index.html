@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
-  <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700'' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -304,8 +304,7 @@
                   <% for ( var i = 0; i < dates.length; i++ ) { %>
                     <li class="<%=dates[i].elClass%>">
                       <a href="#<%=dates[i].event.id%>">
-                        <span class="date-name"><%=dates[i].dateName%></span>
-                        <span class="event-name"><%=dates[i].event.name%></span>
+                        <h3 class="date-name"><%=dates[i].dateName%>: <span class="event-name"><%=dates[i].event.name%></span></h3>
                         <em class="quote"><%=dates[i].event.quote%></em>
                       </a>
                       <div class="description"></div>
@@ -316,7 +315,7 @@
             </script>
 
             <script type="text/html" id="today_tmpl">
-              <li class="today"><i class="foundicon-right-arrow"></i> <%=year%>-<%=month%>-<%=day%></li>
+              <li class="date today">Idag: <%=year%>-<%=month%>-<%=day%></li>
             </script>
 
             <section class="about">

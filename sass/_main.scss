@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: $base_color;
 }
 
 body {
@@ -56,6 +56,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+a {
+  color: #666;
+  text-decoration: none;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -72,7 +77,7 @@ nav {
   }
 
   a {
-    color: #222;
+    color: $base_color;
     font-size: 1.2em;
     font-style: italic;
     display: block;
@@ -88,9 +93,9 @@ nav {
 
     &:before {
       @include inline-block();
-      color: #ccc;
       content: "☛";
       font-size: 1.5em;
+      font-style: normal;
       margin-right: 0.3em;
       vertical-align: baseline;
     }

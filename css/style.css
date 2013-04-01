@@ -723,7 +723,7 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #333333;
 }
 
 body {
@@ -772,6 +772,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+a {
+  color: #666;
+  text-decoration: none;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -784,7 +789,7 @@ nav ul {
   display: block;
 }
 nav a {
-  color: #222;
+  color: #333333;
   font-size: 1.2em;
   font-style: italic;
   display: block;
@@ -798,9 +803,9 @@ nav a:before {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  color: #ccc;
   content: "☛";
   font-size: 1.5em;
+  font-style: normal;
   margin-right: 0.3em;
   vertical-align: baseline;
 }
@@ -1034,29 +1039,23 @@ nav a:after {
   display: none;
 }
 
-.date.passed {
-  opacity: .6;
-}
-.date.next-event none {
-  border: 1px solid #ccc;
-}
-
 .timeline {
-  padding-top: 40px;
+  padding-top: 3em;
   position: relative;
 }
 .timeline:before {
-  background: #ccc;
+  border-left: 2px dashed #333333;
   content: " ";
   display: block;
   height: 100%;
   left: 50%;
-  margin-left: -5px;
+  margin-left: 0px;
   position: absolute;
   top: 0;
-  width: 10px;
+  width: 2px;
 }
 .timeline h2 {
+  margin: 0;
   position: absolute;
   width: 47%;
   top: 0;
@@ -1068,45 +1067,86 @@ nav a:after {
   left: 0;
   text-align: right;
 }
-.timeline ul {
+.timeline > ul {
   list-style-type: none;
   padding: 0;
 }
-.timeline li a {
-  display: block;
-  width: 47%;
+.timeline li.date {
+  margin: 1.4em 0;
 }
-.timeline .event-type-walk a {
+.timeline li.date.passed {
+  opacity: .6;
+}
+.timeline li.date.event-type-walk a {
   margin: 0 0 0 auto;
   text-align: left;
 }
-.timeline .event-type-excursion a {
+.timeline li.date.event-type-excursion a {
   margin: 0 auto 0 0;
   text-align: right;
 }
-.timeline .date-name {
+.timeline li.date.date-name {
   font-weight: bold;
 }
-.timeline .today {
-  background: #fff;
-  border: 1px solid #999;
-  color: #999;
-  font-size: 12px;
-  margin: 0 auto;
+.timeline li.date.today {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background: #333333;
+  color: #fff;
+  margin: 1em auto;
+  padding: 5px;
   position: relative;
   text-align: center;
   width: 7em;
 }
-.timeline .today i.foundicon-right-arrow {
-  color: #ccc;
-  font-size: 1.6em;
-  left: -1.4em;
+.timeline li.date.today:before {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  color: #333333;
+  content: "☛";
+  font-size: 2em;
+  left: -1.2em;
+  line-height: 0.6em;
   position: absolute;
 }
-.timeline li .description {
-  background: #fff;
-  border: 1px solid #ccc;
+.timeline li.date.today:before {
+  *display: inline;
+}
+.timeline li.date a {
+  color: #333333;
+  display: block;
+  width: 47%;
+}
+.timeline li.date .date-name {
+  font-size: 1em;
+  margin: 0;
+}
+.timeline li.date .description {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+  background: #fcfbf4;
   display: none;
-  padding: 10px;
+  margin: 1em 4em;
+  padding: 2em;
   position: relative;
+}
+
+.event-description h1 {
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0 0 0.6em 0;
 }

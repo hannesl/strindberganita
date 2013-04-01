@@ -173,7 +173,7 @@
       $date
         .addClass("active")
         .find(".description")
-          .html($event.html())
+          .html($event[0].outerHTML)
           .append($closeLink)
           .slideDown();
     }

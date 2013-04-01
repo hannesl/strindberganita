@@ -1,9 +1,10 @@
 @import "compass/css3";
 
+$base_color: #333;
+
 @import "normalize";
 @import "icons";
 @import "main";
-
 
 .js {
   .walks,
@@ -13,32 +14,24 @@
   }
 }
 
-.date {
-  &.passed {
-    opacity: .6;
-  }
-  &.next-event none{
-    border: 1px solid #ccc;
-  }
-}
-
 .timeline {
-  padding-top: 40px;
+  padding-top: 3em;
   position: relative;
 
   &:before {
-    background: #ccc;
+    border-left: 2px dashed $base_color;
     content: " ";
     display: block;
     height: 100%;
     left: 50%;
-    margin-left: -5px;
+    margin-left: -0px;
     position: absolute;
     top: 0;
-    width: 10px;
+    width: 2px;
   }
 
   h2 {
+    margin: 0;
     position: absolute;
     width: 47%;
     top: 0;
@@ -51,53 +44,81 @@
     }
   }
 
-  ul {
+  &>ul {
     list-style-type: none;
     padding: 0;
   }
-  li {
+  li.date {
+    margin: 1.4em 0;
+    &.passed {
+      opacity: .6;
+    }
+    &.next-event a {
+    }
+
+    &.event-type-walk a {
+      margin: 0 0 0 auto;
+      text-align: left;
+    }
+
+    &.event-type-excursion a {
+      margin: 0 auto 0 0;
+      text-align: right;
+    }
+
+    &.date-name {
+      font-weight: bold;
+    }
+
+    &.today {
+      @include border-radius(8px);
+      background: $base_color;
+      color: #fff;
+      margin: 1em auto;
+      padding: 5px;
+      position: relative;
+      text-align: center;
+      width: 7em;
+    }
+    &.today:before {
+      @include inline-block();
+      color: $base_color;
+      content: "☛";
+      font-size: 2em;
+      left: -1.2em;
+      line-height: 0.6em;
+      position: absolute;
+    }
+
     a {
+      color: $base_color;
       display: block;
       width: 47%;
     }
-  }
 
-  .event-type-walk a {
-    margin: 0 0 0 auto;
-    text-align: left;
-  }
+    .date-name {
+      font-size: 1em;
+      margin: 0;
+    }
 
-  .event-type-excursion a {
-    margin: 0 auto 0 0;
-    text-align: right;
+    .description {
+      @include border-radius(12px);
+      @include single-box-shadow(rgba(0, 0, 0, 0.3), 0, 6px, 40px);
+      background: #fcfbf4;
+      display: none;
+      margin: 1em 4em;
+      padding: 2em;
+      position: relative;
+    }
   }
+}
 
-  .date-name {
-    font-weight: bold;
-  }
-
-  .today {
-    background: #fff;
-    border: 1px solid #999;
-    color: #999;
-    font-size: 12px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    width: 7em;
-  }
-  .today i.foundicon-right-arrow {
-    color: #ccc;
-    font-size: 1.6em;
-    left: -1.4em;
-    position: absolute;
-  }
-
-  li .description {
-    background: #fff;
-    border: 1px solid #ccc;
-    display: none;
-    padding: 10px;
-    position: relative;
+.event-description {
+  h1 {
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
   }
 }
