@@ -3,18 +3,17 @@
 $base_color: #333;
 
 @import "normalize";
-@import "icons";
 @import "main";
 
 .js {
-  .walks,
-  .excursions,
-  .about {
+  #walks,
+  #excursions,
+  #about {
     display: none;
   }
 }
 
-.timeline {
+#timeline {
   padding-top: 3em;
   position: relative;
 
@@ -74,11 +73,12 @@ $base_color: #333;
       @include border-radius(8px);
       background: $base_color;
       color: #fff;
+      font-size: 0.8em;
       margin: 1em auto;
-      padding: 5px;
+      padding: 3px 5px;
       position: relative;
       text-align: center;
-      width: 7em;
+      width: 8em;
     }
     &.today:before {
       @include inline-block();

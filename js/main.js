@@ -108,10 +108,10 @@
     var $timeline,
         $navLinks = $('#navigation a');
 
-    $(".main").find(".walks article.event-description")
+    $(".main").find("#walks article.event-description")
       .data("event-type", "walk")
       .each(processEvent);
-    $(".main").find(".excursions article.event-description")
+    $(".main").find("#excursions article.event-description")
       .data("event-type", "excursion")
       .each(processEvent);
 
@@ -119,7 +119,7 @@
 
     // Render and insert the timeline template.
     $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
-    $timeline = $(".timeline")
+    $timeline = $("#timeline")
 
     // Insert the 'today' marker.
     var todayVars = {
@@ -136,13 +136,13 @@
       $navLinks.removeClass('active');
       $('section').hide();
       switch (window.location.hash) {
-        case '#info':
-          $('.walks, .excursions').show();
-          $navLinks.filter('[href="#info"]').addClass('active');
+        case '#vandringar':
+          $('#walks-intro, #walks, #excursions').show();
+          $navLinks.filter('[href="#vandringar"]').addClass('active');
           break;
-        case '#about':
-          $('.about').show();
-          $navLinks.filter('[href="#about"]').addClass('active');
+        case '#anita':
+          $('#about').show();
+          $navLinks.filter('[href="#anita"]').addClass('active');
           break;
         default:
           $timeline.show();

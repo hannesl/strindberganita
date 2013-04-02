@@ -497,227 +497,6 @@ table {
   border-spacing: 0;
 }
 
-/* ==========================================================================
-   Icons
-   ========================================================================== */
-@font-face {
-  font-family: "GeneralFoundicons";
-  src: url("foundation_icons_general/general_foundicons.eot");
-  src: url("foundation_icons_general/general_foundicons.eot?#iefix") format("embedded-opentype"), url("foundation_icons_general/general_foundicons.woff") format("woff"), url("foundation_icons_general/general_foundicons.ttf") format("truetype"), url("foundation_icons_general/general_foundicons.svg#GeneralFoundicons") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class*="foundicon-"] {
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: inherit;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
-[class*="foundicon-"]:before {
-  font-family: "GeneralFoundicons";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-}
-
-/* icons */
-.foundicon-settings:before {
-  content: "\f000";
-}
-
-.foundicon-heart:before {
-  content: "\f001";
-}
-
-.foundicon-star:before {
-  content: "\f002";
-}
-
-.foundicon-plus:before {
-  content: "\f003";
-}
-
-.foundicon-minus:before {
-  content: "\f004";
-}
-
-.foundicon-checkmark:before {
-  content: "\f005";
-}
-
-.foundicon-remove:before {
-  content: "\f006";
-}
-
-.foundicon-mail:before {
-  content: "\f007";
-}
-
-.foundicon-calendar:before {
-  content: "\f008";
-}
-
-.foundicon-page:before {
-  content: "\f009";
-}
-
-.foundicon-tools:before {
-  content: "\f00a";
-}
-
-.foundicon-globe:before {
-  content: "\f00b";
-}
-
-.foundicon-home:before {
-  content: "\f00c";
-}
-
-.foundicon-quote:before {
-  content: "\f00d";
-}
-
-.foundicon-people:before {
-  content: "\f00e";
-}
-
-.foundicon-monitor:before {
-  content: "\f00f";
-}
-
-.foundicon-laptop:before {
-  content: "\f010";
-}
-
-.foundicon-phone:before {
-  content: "\f011";
-}
-
-.foundicon-cloud:before {
-  content: "\f012";
-}
-
-.foundicon-error:before {
-  content: "\f013";
-}
-
-.foundicon-right-arrow:before {
-  content: "\f014";
-}
-
-.foundicon-left-arrow:before {
-  content: "\f015";
-}
-
-.foundicon-up-arrow:before {
-  content: "\f016";
-}
-
-.foundicon-down-arrow:before {
-  content: "\f017";
-}
-
-.foundicon-trash:before {
-  content: "\f018";
-}
-
-.foundicon-add-doc:before {
-  content: "\f019";
-}
-
-.foundicon-edit:before {
-  content: "\f01a";
-}
-
-.foundicon-lock:before {
-  content: "\f01b";
-}
-
-.foundicon-unlock:before {
-  content: "\f01c";
-}
-
-.foundicon-refresh:before {
-  content: "\f01d";
-}
-
-.foundicon-paper-clip:before {
-  content: "\f01e";
-}
-
-.foundicon-video:before {
-  content: "\f01f";
-}
-
-.foundicon-photo:before {
-  content: "\f020";
-}
-
-.foundicon-graph:before {
-  content: "\f021";
-}
-
-.foundicon-idea:before {
-  content: "\f022";
-}
-
-.foundicon-mic:before {
-  content: "\f023";
-}
-
-.foundicon-cart:before {
-  content: "\f024";
-}
-
-.foundicon-address-book:before {
-  content: "\f025";
-}
-
-.foundicon-compass:before {
-  content: "\f026";
-}
-
-.foundicon-flag:before {
-  content: "\f027";
-}
-
-.foundicon-location:before {
-  content: "\f028";
-}
-
-.foundicon-clock:before {
-  content: "\f029";
-}
-
-.foundicon-folder:before {
-  content: "\f02a";
-}
-
-.foundicon-inbox:before {
-  content: "\f02b";
-}
-
-.foundicon-website:before {
-  content: "\f02c";
-}
-
-.foundicon-smiley:before {
-  content: "\f02d";
-}
-
-.foundicon-search:before {
-  content: "\f02e";
-}
-
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
 html,
 button,
 input,
@@ -728,8 +507,9 @@ textarea {
 
 body {
   font-size: 1.125em;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: Alegreya, Georgia, 'Bitstream Vera Serif', serif;
+  padding: 1em;
 }
 
 ::-moz-selection {
@@ -777,9 +557,6 @@ a {
   text-decoration: none;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
 nav ul {
   display: none;
   margin: 0;
@@ -818,17 +595,14 @@ nav a:after {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  font-size: 1.6em;
+  font-size: 1.5em;
   content: " ";
-  margin-left: 1.1em;
+  margin-left: 0.3em;
 }
 nav a:after {
   *display: inline;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
 .main {
   padding: 30px 0;
 }
@@ -841,70 +615,39 @@ nav a:after {
   padding: 20px 0;
 }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+.wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 @media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
+  nav {
+    text-align: center;
+  }
+  nav li {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
     margin-bottom: 0;
+    margin-right: 1em;
+    vertical-align: top;
   }
-
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  nav li:last-child a {
-    margin-right: 0;
-  }
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-  nav ul li {
-    display: inline;
-  }
-
-  .oldie nav a {
-    margin: 0 0.7%;
+  nav li {
+    *display: inline;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* ============
-      WIDE: Menu
-     ============ */
-  .title {
-    float: left;
+  body {
+    font-size: 1.25em;
+    padding: 2em;
   }
 
-  nav {
-    float: right;
-    width: 38%;
-  }
-
-  /* ============
-      WIDE: Main
-     ============ */
-}
-@media only screen and (min-width: 1140px) {
-  /* ===============
-      Maximal Width
-     =============== */
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto;
+  nav li {
+    margin-right: 2em;
   }
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 .ir {
   background-color: transparent;
   border: 0;
@@ -963,9 +706,6 @@ nav a:after {
   *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
 @media print {
   * {
     background: transparent !important;
@@ -1033,17 +773,17 @@ nav a:after {
     page-break-after: avoid;
   }
 }
-.js .walks,
-.js .excursions,
-.js .about {
+.js #walks,
+.js #excursions,
+.js #about {
   display: none;
 }
 
-.timeline {
+#timeline {
   padding-top: 3em;
   position: relative;
 }
-.timeline:before {
+#timeline:before {
   border-left: 2px dashed #333333;
   content: " ";
   display: block;
@@ -1054,41 +794,41 @@ nav a:after {
   top: 0;
   width: 2px;
 }
-.timeline h2 {
+#timeline h2 {
   margin: 0;
   position: absolute;
   width: 47%;
   top: 0;
 }
-.timeline h2.timeline-walks {
+#timeline h2.timeline-walks {
   right: 0;
 }
-.timeline h2.timeline-excursions {
+#timeline h2.timeline-excursions {
   left: 0;
   text-align: right;
 }
-.timeline > ul {
+#timeline > ul {
   list-style-type: none;
   padding: 0;
 }
-.timeline li.date {
+#timeline li.date {
   margin: 1.4em 0;
 }
-.timeline li.date.passed {
+#timeline li.date.passed {
   opacity: .6;
 }
-.timeline li.date.event-type-walk a {
+#timeline li.date.event-type-walk a {
   margin: 0 0 0 auto;
   text-align: left;
 }
-.timeline li.date.event-type-excursion a {
+#timeline li.date.event-type-excursion a {
   margin: 0 auto 0 0;
   text-align: right;
 }
-.timeline li.date.date-name {
+#timeline li.date.date-name {
   font-weight: bold;
 }
-.timeline li.date.today {
+#timeline li.date.today {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -1096,13 +836,14 @@ nav a:after {
   border-radius: 8px;
   background: #333333;
   color: #fff;
+  font-size: 0.8em;
   margin: 1em auto;
-  padding: 5px;
+  padding: 3px 5px;
   position: relative;
   text-align: center;
-  width: 7em;
+  width: 8em;
 }
-.timeline li.date.today:before {
+#timeline li.date.today:before {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -1115,19 +856,19 @@ nav a:after {
   line-height: 0.6em;
   position: absolute;
 }
-.timeline li.date.today:before {
+#timeline li.date.today:before {
   *display: inline;
 }
-.timeline li.date a {
+#timeline li.date a {
   color: #333333;
   display: block;
   width: 47%;
 }
-.timeline li.date .date-name {
+#timeline li.date .date-name {
   font-size: 1em;
   margin: 0;
 }
-.timeline li.date .description {
+#timeline li.date .description {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -1140,7 +881,7 @@ nav a:after {
   margin: 1em 4em;
   position: relative;
 }
-.timeline li.date .description article {
+#timeline li.date .description article {
   -webkit-transition: max-height 0.4s ease-in-out;
   -webkit-transition-delay: 0;
   -moz-transition: max-height 0.4s ease-in-out 0;
@@ -1151,10 +892,10 @@ nav a:after {
   margin: 0 2em;
   overflow: hidden;
 }
-.timeline li.date .description.visible article {
+#timeline li.date .description.visible article {
   max-height: 999px;
 }
-.timeline li.date .description .close-button {
+#timeline li.date .description .close-button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -1175,7 +916,7 @@ nav a:after {
   top: -8px;
   width: 20px;
 }
-.timeline li.date .description .close-button:before {
+#timeline li.date .description .close-button:before {
   color: #fff;
   content: "✕";
   display: block;
