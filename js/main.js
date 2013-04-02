@@ -162,7 +162,7 @@
           $event = $($(link).attr("href")),
           $closeLink;
 
-      $closeLink = $('<a href="#">Stäng</a>')
+      $closeLink = $('<a class="close-button" href="#">Stäng</a>')
         .click(function(e) {
           $timeline.find(".date").removeClass("active");
           hideDates();
@@ -175,13 +175,15 @@
         .find(".description")
           .html($event[0].outerHTML)
           .append($closeLink)
-          .slideDown();
+          .addClass('visible');
     }
 
     var hideDates = function hideDates() {
-      $timeline.find(".date:not(.active) .description").slideUp(function() {
-        $(this).text("");
-      });
+      var $description = $timeline.find(".date:not(.active) .description");
+      $description.removeClass('visible');
+      setTimeout(function() {
+        $description.text("");
+      }, 400);
     }
 
     $timeline.find("li.date a").on("click", function(e) {
