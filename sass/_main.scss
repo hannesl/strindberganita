@@ -61,6 +61,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 1.6em 0 0.2em 0;
+}
+
 // Menu
 
 nav {
@@ -111,10 +116,6 @@ nav {
 
 .main {
   padding: 30px 0;
-}
-
-.main article h1 {
-  font-size: 2em;
 }
 
 .footer-container footer {

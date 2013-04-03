@@ -13,6 +13,10 @@ $base_color: #333;
   }
 }
 
+section h1 {
+  font-size: 1.6em;
+}
+
 #timeline {
   padding-top: 3em;
   position: relative;
@@ -154,15 +158,14 @@ $base_color: #333;
 
 .event-description {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-style: italic;
     font-weight: normal;
     line-height: 1em;
     margin: 1em 0 0.6em 0;
   }
   footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 2em 0;
   }
 }
