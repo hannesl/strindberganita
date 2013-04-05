@@ -559,9 +559,12 @@ a {
 
 h1 {
   font-size: 2em;
-  margin: 1.6em 0 0.2em 0;
+  margin: 0 0 0.2em 0;
 }
 
+nav {
+  margin: 2em 0;
+}
 nav ul {
   display: none;
   margin: 0;
@@ -580,8 +583,7 @@ nav a {
   color: #333333;
   font-size: 1.2em;
   font-style: italic;
-  display: block;
-  margin: 0 0 1em 1.6em;
+  margin: 0 0 0 1.6em;
   position: relative;
   text-decoration: none;
 }
@@ -601,14 +603,10 @@ nav a:before {
   left: -1.15em;
   line-height: 1em;
   position: absolute;
-  top: 0;
+  top: -0.1em;
 }
 nav a:hover:before {
   left: -1.05em;
-}
-
-.main {
-  padding: 30px 0;
 }
 
 .footer-container footer {
@@ -638,7 +636,11 @@ nav a:hover:before {
     *display: inline;
   }
   nav a {
+    display: block;
     text-align: center;
+  }
+  nav a:before {
+    top: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -776,6 +778,34 @@ nav a:hover:before {
     page-break-after: avoid;
   }
 }
+header {
+  text-align: center;
+}
+header h1 {
+  font-weight: normal;
+  font-size: 2em;
+  margin: 1em 0;
+}
+header h1 span {
+  display: block;
+  font-size: 0.5em;
+  font-style: italic;
+  line-height: 0.7em;
+}
+header p {
+  margin: 0 2em;
+}
+@media only screen and (min-width: 480px) {
+  header h1 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 2.4em;
+  }
+}
+
 .js #walks,
 .js #excursions,
 .js #about {
@@ -784,6 +814,22 @@ nav a:hover:before {
 
 section h1 {
   font-size: 1.6em;
+}
+
+#walks-intro,
+#walks,
+#excursions {
+  margin: 1em 0;
+}
+#walks-intro:before,
+#walks:before,
+#excursions:before {
+  border: 1px solid #333333;
+  border-width: 1px 0 2px 0;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin-bottom: 1em;
 }
 
 #timeline {

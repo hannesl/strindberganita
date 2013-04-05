@@ -63,12 +63,14 @@ a {
 
 h1 {
   font-size: 2em;
-  margin: 1.6em 0 0.2em 0;
+  margin: 0 0 0.2em 0;
 }
 
 // Menu
 
 nav {
+  margin: 2em 0;
+
   ul {
     display: none;
     margin: 0;
@@ -88,8 +90,7 @@ nav {
     color: $base_color;
     font-size: 1.2em;
     font-style: italic;
-    display: block;
-    margin: 0 0 1em 1.6em;
+    margin: 0 0 0 1.6em;
     position: relative;
 
     text-decoration: none;
@@ -110,7 +111,7 @@ nav {
       left: -1.15em;
       line-height: 1em;
       position: absolute;
-      top: 0;
+      top: -0.1em;
     }
     &:hover:before {
       left: -1.05em;
@@ -122,7 +123,6 @@ nav {
 // Main
 
 .main {
-  padding: 30px 0;
 }
 
 .footer-container footer {
@@ -147,7 +147,11 @@ nav {
       vertical-align: top;
     }
     a {
+      display: block;
       text-align: center;
+      &:before {
+        top: 0;
+      }
     }
   }
 }
