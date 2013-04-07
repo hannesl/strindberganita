@@ -510,6 +510,7 @@ body {
   line-height: 1.5;
   font-family: Alegreya, Georgia, 'Bitstream Vera Serif', serif;
   padding: 1em;
+  text-rendering: optimizeLegibility;
 }
 
 ::-moz-selection {
@@ -607,10 +608,6 @@ nav a:before {
 }
 nav a:hover:before {
   left: -1.05em;
-}
-
-.footer-container footer {
-  padding: 20px 0;
 }
 
 .wrapper {
@@ -792,17 +789,35 @@ header h1 span {
   font-style: italic;
   line-height: 0.7em;
 }
-header p {
-  margin: 0 2em;
-}
 @media only screen and (min-width: 480px) {
   header h1 {
     font-size: 2.4em;
+  }
+  header .intro {
+    margin: 0 2em;
   }
 }
 @media only screen and (min-width: 768px) {
   header h1 {
     font-size: 2.4em;
+  }
+  header .intro {
+    margin: 0;
+    min-height: 290px;
+    overflow: hidden;
+    padding-left: 51%;
+    position: relative;
+    text-align: left;
+  }
+  header .intro:after {
+    background: url('../img/anita_strindberg_vagg.jpg?1364798966') 0 -50px no-repeat;
+    content: ".";
+    display: block;
+    right: 51%;
+    position: absolute;
+    top: -10px;
+    width: 400px;
+    height: 300px;
   }
 }
 
@@ -833,60 +848,92 @@ section h1 {
 }
 
 #timeline {
-  padding-top: 3em;
-  position: relative;
+  text-align: center;
 }
 #timeline:before {
-  border-left: 2px dashed #333333;
+  border: 1px solid #333333;
+  border-width: 1px 0 2px 0;
   content: " ";
   display: block;
-  height: 100%;
-  left: 50%;
-  margin-left: 0px;
-  position: absolute;
-  top: 0;
-  width: 2px;
+  height: 2px;
+  margin-bottom: 1em;
+}
+#timeline .intro {
+  font-size: 0.9em;
 }
 #timeline h2 {
-  margin: 0;
-  position: absolute;
-  width: 47%;
-  top: 0;
+  display: none;
 }
-#timeline h2.timeline-walks {
-  right: 0;
+@media only screen and (min-width: 480px) {
+  #timeline {
+    margin-top: 3.2em;
+    padding-top: 3em;
+    position: relative;
+  }
+  #timeline:before {
+    content: none;
+  }
+  #timeline:before {
+    border-left: 2px dashed #333333;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin-left: 0px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+  }
+  #timeline .intro {
+    background: #fff;
+    margin-top: -5.6em;
+    position: relative;
+  }
+  #timeline h2 {
+    display: block;
+    margin: -0.3em 0 0 0;
+    position: absolute;
+    width: 47%;
+  }
+  #timeline h2.timeline-walks {
+    right: 0;
+    text-align: left;
+  }
+  #timeline h2.timeline-excursions {
+    left: 0;
+    text-align: right;
+  }
 }
-#timeline h2.timeline-excursions {
-  left: 0;
-  text-align: right;
+@media only screen and (min-width: 768px) {
+  #timeline {
+    margin-top: 3.6em;
+  }
+  #timeline .intro {
+    font-size: 1em;
+  }
 }
 #timeline > ul {
   list-style-type: none;
   padding: 0;
 }
+@media only screen and (min-width: 480px) {
+  #timeline > ul {
+    margin-top: 3.4em;
+  }
+}
 #timeline li.date {
   margin: 1.4em 0;
 }
 #timeline li.date.passed {
-  opacity: .6;
-}
-#timeline li.date.event-type-walk a {
-  margin: 0 0 0 auto;
-  text-align: left;
-}
-#timeline li.date.event-type-excursion a {
-  margin: 0 auto 0 0;
-  text-align: right;
-}
-#timeline li.date.date-name {
-  font-weight: bold;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 #timeline li.date.today {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   background: #333333;
   color: #fff;
   font-size: 0.8em;
@@ -915,11 +962,43 @@ section h1 {
 #timeline li.date a {
   color: #333333;
   display: block;
-  width: 47%;
 }
-#timeline li.date .date-name {
+#timeline li.date h3 {
   font-size: 1em;
   margin: 0;
+  white-space: nowrap;
+}
+#timeline li.date h3 time {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #333333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.05em 0.4em;
+}
+@media only screen and (min-width: 480px) {
+  #timeline li.date a {
+    width: 47%;
+  }
+  #timeline li.date.event-type-walk a {
+    margin: 0 0 0 auto;
+    text-align: left;
+  }
+  #timeline li.date.event-type-walk a h3 time {
+    margin-right: 0.2em;
+  }
+  #timeline li.date.event-type-excursion a {
+    margin: 0 auto 0 0;
+    text-align: right;
+  }
+  #timeline li.date.event-type-excursion a h3 time {
+    float: right;
+    margin-left: 0.5em;
+  }
 }
 #timeline li.date .description {
   -webkit-border-radius: 12px;
@@ -931,8 +1010,19 @@ section h1 {
   -moz-box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
   box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
   background: #fcfbf4;
-  margin: 1em 4em;
+  margin: 1em;
   position: relative;
+  text-align: left;
+}
+@media only screen and (min-width: 480px) {
+  #timeline li.date .description {
+    margin: 1em 2em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #timeline li.date .description {
+    margin: 1em 3em;
+  }
 }
 #timeline li.date .description article {
   -webkit-transition: max-height 0.4s ease-in-out;
@@ -974,22 +1064,60 @@ section h1 {
   content: "✕";
   display: block;
   left: 0;
-  line-height: 22px;
+  line-height: 20px;
   position: absolute;
   text-align: center;
   text-indent: 0;
-  top: 0;
+  top: 1px;
   width: 20px;
+}
+
+#about:before {
+  border: 1px solid #333333;
+  border-width: 1px 0 2px 0;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin-bottom: 1em;
 }
 
 .event-description h1 {
   font-size: 1.2em;
   font-style: italic;
   font-weight: normal;
-  line-height: 1em;
-  margin: 1em 0 0.6em 0;
+  line-height: 1.2em;
+  margin: 1.2em 0 0.6em 0;
 }
 .event-description footer {
   font-size: 0.9em;
-  margin: 2em 0;
+  line-height: 120%;
+  margin: 1em 0 2em 2em;
+}
+.event-description footer p {
+  margin: 0.4em 0;
+}
+.event-description footer .dates {
+  list-style-type: none;
+  margin: -1.2em 0 0.4em 0;
+  padding: 0 0 0 4em;
+}
+.event-description footer .dates li {
+  margin: 0 0.4em 0.4em 0;
+}
+.event-description footer .dates li time:first-child {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #333333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.05em 0.4em;
+  font-size: 1em;
+  white-space: nowrap;
+}
+#walks .event-description, #excursions .event-description {
+  margin-bottom: 3em;
 }

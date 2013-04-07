@@ -14,6 +14,7 @@ body {
   line-height: 1.5;
   font-family: Alegreya, Georgia, 'Bitstream Vera Serif', serif;
   padding: 1em;
+  text-rendering: optimizeLegibility;
 }
 
 ::-moz-selection {
@@ -123,10 +124,6 @@ nav {
 // Main
 
 .main {
-}
-
-.footer-container footer {
-  padding: 20px 0;
 }
 
 .wrapper {

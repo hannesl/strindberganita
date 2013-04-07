@@ -5,6 +5,32 @@ $base_color: #333;
 @import "normalize";
 @import "main";
 
+@mixin fancy-border-top() {
+  &:before {
+    border: 1px solid $base_color;
+    border-width: 1px 0 2px 0;
+    content: " ";
+    display: block;
+    height: 2px;
+    margin-bottom: 1em;
+  }
+}
+
+@mixin fancy-border-top-off() {
+  &:before {
+    content: none;
+  }
+}
+
+@mixin date-bubble() {
+  @include border-radius(4px);
+  background: $base_color;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.05em 0.4em;
+}
+
 header {
   text-align: center;
   h1 {
@@ -18,17 +44,39 @@ header {
       line-height: 0.7em;
     }
   }
+  .intro {
+  }
   p {
-    margin: 0 2em;
   }
   @media only screen and (min-width: 480px) {
     h1 {
       font-size: 2.4em;
     }
+    .intro {
+      margin: 0 2em;
+    }
   }
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 2.4em;
+    }
+    .intro {
+      margin: 0;
+      min-height: 290px;
+      overflow: hidden;
+      padding-left: 51%;
+      position: relative;
+      text-align: left;
+      &:after {
+        background: image_url("anita_strindberg_vagg.jpg") 0 -50px no-repeat;
+        content: ".";
+        display: block;
+        right: 51%;
+        position: absolute;
+        top: -10px;
+        width: 400px;
+        height: 300px;
+      }
     }
   }
 }
@@ -48,47 +96,70 @@ section h1 {
 #walks-intro,
 #walks,
 #excursions {
+  @include fancy-border-top();
   margin: 1em 0;
-  &:before {
-    border: 1px solid $base_color;
-    border-width: 1px 0 2px 0;
-    content: " ";
-    display: block;
-    height: 2px;
-    margin-bottom: 1em;
-  }
   h1 {
 
   }
 }
 
 #timeline {
-  padding-top: 3em;
-  position: relative;
+  @include fancy-border-top();
 
-  &:before {
-    border-left: 2px dashed $base_color;
-    content: " ";
-    display: block;
-    height: 100%;
-    left: 50%;
-    margin-left: -0px;
-    position: absolute;
-    top: 0;
-    width: 2px;
+  text-align: center;
+
+  .intro {
+    font-size: 0.9em;
   }
 
   h2 {
-    margin: 0;
-    position: absolute;
-    width: 47%;
-    top: 0;
-    &.timeline-walks {
-      right: 0;
+    display: none;
+  }
+
+  @media only screen and (min-width: 480px) {
+    @include fancy-border-top-off ();
+    margin-top: 3.2em;
+    padding-top: 3em;
+    position: relative;
+
+    &:before {
+      border-left: 2px dashed $base_color;
+      content: " ";
+      display: block;
+      height: 100%;
+      left: 50%;
+      margin-left: -0px;
+      position: absolute;
+      top: 0;
+      width: 2px;
     }
-    &.timeline-excursions {
-      left: 0;
-      text-align: right;
+
+    .intro {
+      background: #fff;
+      margin-top: -5.6em;
+      position: relative;
+    }
+
+    h2 {
+      display: block;
+      margin: -0.3em 0 0 0;
+      position: absolute;
+      width: 47%;
+      &.timeline-walks {
+        right: 0;
+        text-align: left;
+      }
+      &.timeline-excursions {
+        left: 0;
+        text-align: right;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 3.6em;
+    .intro {
+      font-size: 1em;
     }
   }
 
@@ -96,30 +167,26 @@ section h1 {
     list-style-type: none;
     padding: 0;
   }
+
+
+  @media only screen and (min-width: 480px) {
+    &>ul {
+      margin-top: 3.4em;
+    }
+  }
+
   li.date {
     margin: 1.4em 0;
+
     &.passed {
-      opacity: .6;
+      @include opacity(.8);
     }
+
     &.next-event a {
     }
 
-    &.event-type-walk a {
-      margin: 0 0 0 auto;
-      text-align: left;
-    }
-
-    &.event-type-excursion a {
-      margin: 0 auto 0 0;
-      text-align: right;
-    }
-
-    &.date-name {
-      font-weight: bold;
-    }
-
     &.today {
-      @include border-radius(8px);
+      @include border-radius(4px);
       background: $base_color;
       color: #fff;
       font-size: 0.8em;
@@ -142,20 +209,54 @@ section h1 {
     a {
       color: $base_color;
       display: block;
-      width: 47%;
     }
 
-    .date-name {
+    h3 {
       font-size: 1em;
       margin: 0;
+      white-space: nowrap;
+      time {
+        @include date-bubble();
+      }
+    }
+
+    @media only screen and (min-width: 480px) {
+      a {
+        width: 47%;
+      }
+
+      &.event-type-walk a {
+        margin: 0 0 0 auto;
+        text-align: left;
+        h3 time {
+          margin-right: 0.2em;
+        }
+      }
+
+      &.event-type-excursion a {
+        margin: 0 auto 0 0;
+        text-align: right;
+        h3 time {
+          float: right;
+          margin-left: 0.5em;
+        }
+      }
     }
 
     .description {
       @include border-radius(12px);
       @include single-box-shadow(rgba(0, 0, 0, 0.3), 0, 6px, 40px);
       background: #fcfbf4;
-      margin: 1em 4em;
+      margin: 1em;
       position: relative;
+      text-align: left;
+
+      @media only screen and (min-width: 480px) {
+        margin: 1em 2em;
+      }
+      @media only screen and (min-width: 768px) {
+        margin: 1em 3em;
+      }
 
       article {
         @include single-transition(max-height, 0.4s, ease-in-out, 0);
@@ -189,11 +290,11 @@ section h1 {
           content: "✕";
           display: block;
           left: 0;
-          line-height: 22px;
+          line-height: 20px;
           position: absolute;
           text-align: center;
           text-indent: 0;
-          top: 0;
+          top: 1px;
           width: 20px;
         }
       }
@@ -201,16 +302,42 @@ section h1 {
   }
 }
 
+#about {
+  @include fancy-border-top();
+}
+
 .event-description {
   h1 {
     font-size: 1.2em;
     font-style: italic;
     font-weight: normal;
-    line-height: 1em;
-    margin: 1em 0 0.6em 0;
+    line-height: 1.2em;
+    margin: 1.2em 0 0.6em 0;
   }
   footer {
     font-size: 0.9em;
-    margin: 2em 0;
+    line-height: 120%;
+    margin: 1em 0 2em 2em;
+    p {
+      margin: 0.4em 0;
+    }
+    .dates {
+      list-style-type: none;
+      margin: -1.2em 0 0.4em 0;
+      padding: 0 0 0 4em;
+      li {
+        margin: 0 0.4em 0.4em 0;
+        time:first-child {
+          @include date-bubble();
+          font-size: 1em;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  #walks &,
+  #excursions & {
+    margin-bottom: 3em;
   }
 }
