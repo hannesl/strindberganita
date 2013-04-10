@@ -1032,8 +1032,8 @@ section h1 {
   -o-transition: max-height 0.4s ease-in-out 0;
   transition: max-height 0.4s ease-in-out 0;
   max-height: 0px;
-  margin: 0 2em;
   overflow: hidden;
+  padding: 0 2em;
 }
 #timeline li.date .description.visible article {
   max-height: 999px;
@@ -1087,6 +1087,36 @@ section h1 {
   font-weight: normal;
   line-height: 1.2em;
   margin: 1.2em 0 0.6em 0;
+}
+.event-description img {
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  border: 5px solid #fff;
+  display: block;
+  margin: 0 0 0.5em 0;
+  max-width: 98%;
+}
+@media only screen and (min-width: 480px) {
+  .event-description img {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    float: right;
+    margin: 0 0 0.5em 0.5em;
+    max-width: 60%;
+  }
+  .event-description img {
+    *display: inline;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .event-description img {
+    margin: 0 0 0.8em 0.8em;
+    max-width: 40%;
+  }
 }
 .event-description footer {
   font-size: 0.9em;
