@@ -320,15 +320,16 @@ section h1 {
     display: block;
     margin: 0 0 0.5em 0;
     max-width: 98%;
+    -ms-interpolation-mode: bicubic;
     @media only screen and (min-width: 480px) {
       @include inline-block();
       float: right;
       margin: 0 0 0.5em 0.5em;
-      max-width: 60%;
+      max-width: 55%;
     }
     @media only screen and (min-width: 768px) {
       margin: 0 0 0.8em 0.8em;
-      max-width: 40%;
+      max-width: 45%;
     }
   }
   footer {

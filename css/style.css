@@ -612,7 +612,7 @@ nav a:hover:before {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -1096,6 +1096,7 @@ section h1 {
   display: block;
   margin: 0 0 0.5em 0;
   max-width: 98%;
+  -ms-interpolation-mode: bicubic;
 }
 @media only screen and (min-width: 480px) {
   .event-description img {
@@ -1106,7 +1107,7 @@ section h1 {
     *vertical-align: auto;
     float: right;
     margin: 0 0 0.5em 0.5em;
-    max-width: 60%;
+    max-width: 55%;
   }
   .event-description img {
     *display: inline;
@@ -1115,7 +1116,7 @@ section h1 {
 @media only screen and (min-width: 768px) {
   .event-description img {
     margin: 0 0 0.8em 0.8em;
-    max-width: 40%;
+    max-width: 45%;
   }
 }
 .event-description footer {
