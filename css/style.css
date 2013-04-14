@@ -780,18 +780,21 @@ header {
 }
 header h1 {
   font-weight: normal;
-  font-size: 2em;
-  margin: 1em 0;
+  font-size: 1.8em;
+  margin: 0.6em 0 1em 0;
 }
 header h1 span {
   display: block;
-  font-size: 0.5em;
+  font-size: 0.6em;
   font-style: italic;
   line-height: 0.7em;
 }
 @media only screen and (min-width: 480px) {
   header h1 {
     font-size: 2.4em;
+  }
+  header h1 span {
+    font-size: 0.5em;
   }
   header .intro {
     margin: 0 2em;
@@ -1010,7 +1013,7 @@ section h1 {
   -moz-box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
   box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
   background: #fcfbf4;
-  margin: 1em;
+  margin: 0.6em;
   position: relative;
   text-align: left;
 }
@@ -1021,7 +1024,7 @@ section h1 {
 }
 @media only screen and (min-width: 768px) {
   #timeline li.date .description {
-    margin: 1em 3em;
+    margin: 1em 2em;
   }
 }
 #timeline li.date .description article {
@@ -1033,7 +1036,17 @@ section h1 {
   transition: max-height 0.4s ease-in-out 0;
   max-height: 0px;
   overflow: hidden;
-  padding: 0 2em;
+  padding: 0 1.2em;
+}
+@media only screen and (min-width: 480px) {
+  #timeline li.date .description article {
+    padding: 0 1.6em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #timeline li.date .description article {
+    padding: 0 2em;
+  }
 }
 #timeline li.date .description.visible article {
   max-height: 999px;
