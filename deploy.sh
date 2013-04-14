@@ -23,6 +23,6 @@ s3cmd sync --delete-removed \
   --exclude "sass*"\
   --exclude "config.rb"\
   --exclude ".DS_Store"\
-  $DIR/ s3://www.strindberganita.se/test/
+  $DIR/ s3://www.strindberganita.se/
 
 echo "Done!"
