@@ -1,0 +1,60 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+p
+{
+	margin: 4 0 4 0;
+	line-height: 19px;
+}
+h1
+{
+	font-size: 28px;
+	font-weight: bold;
+}
+h2
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+h3
+{
+	font-size: 13px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 4 0 4 0;
+}
+.liten
+{
+	font-size: 12px;
+	line-height: 16px;
+}
+p.liten, .liten p
+{
+	margin: 2px 0;
+}
+.datum
+{
+	font-weight: bold;
+	color: #C00;
+}
+a:link
+{
+    text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+	color: #F00;
+}
+.ruta {
+	border: 1px solid #000000;
+	padding: 6px;
+	width: 100%;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
