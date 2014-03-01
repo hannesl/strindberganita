@@ -117,7 +117,9 @@
       .data("event-type", "excursion")
       .each(processEvent);
 
-    nextEvent.elClass += " next-event";
+    if (nextEvent) {
+      nextEvent.elClass += " next-event";
+    }
 
     // Render and insert the timeline template.
     $("#timeline_tmpl").after(tmpl("timeline_tmpl", { dates: dates }));
