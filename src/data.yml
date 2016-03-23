@@ -1,0 +1,31 @@
+walks:
+  - slug: sodermalm
+    title: ”Det var en afton i början av maj…”
+    body: >
+      <img src="img/katarina.jpg" alt="">
+      Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat- tarens <strong class="event-name">Södermalm</strong>. Men här möter också Bellman, Katarina kyrkogård och klangen från Vita Bergen.
+    dates:
+      - date: "2016-05-05"
+        description: – samling ovanför Stadsmuseets trappa  (biljett Medeltidsmuseet).
+      - date: "2016-08-18"
+        description: – samling vid Mariatorget/Swedenborgs staty.
+    time:
+      value: "18:00"
+
+excursions:
+  - slug: kymmendo
+    title: ”O, du min grönskande ö, blomkorg i havets våg”
+    body: >
+      <img src="img/anita_kymmendo.jpg" alt="">
+      Strindbergs sinnebild för skärgården kan välgrundat anses vara <strong class="event-name">Kymmendö</strong>, Hemsö. Hit flydde han i fadersuppror för att skriva och odla och för att njuta av samvaron med sin första familj och vänner. Vandringen över ön går i ”Hemsöborna”s texter och hus i författarens liv.
+    dates:
+      - date: "2016-07-18"
+        description: laskjfaölskdfj
+      - date: "2016-08-15"
+        description: laskjfaölskdfj
+    time:
+      prefix: ca kl
+      value: "11:00"
+      suffix: ", när båt från Stockholm anlänt. Kolla båttider!"
+    info:
+      - Samling Kymmendös båtbrygga. Medtag gärna matsäck och baddräkt!

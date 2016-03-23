@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Strindbergsvandringar med Anita Persson</title>
+  <meta name="description" content="Vandringar, utflykter eller föreläsningar – specialkomponerade eller enligt färdigt program. Det finns en Strindbergsstund för alla och för alla tillfällen.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+    @-ms-viewport,
+    @-o-viewport,
+    @viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+  </style>
+
+  <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css?v2">
+
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+
+  <div class="header-container">
+    <header class="wrapper">
+      <h1>Strindbergsvandringar <span>med Anita Persson</span></h1>
+
+      <p class="intro">Vandringar eller föreläsningar – specialkomponerade eller enligt <a href="#info">programmet</a> nedan kan beställas av alla, exempelvis av konstföreningar, som födelsedagspresent, till firmafesten, till släktträffen, till lärarmötet, till bostadsrättsföreningen, till gymnasieklassen.<br>
+      <em>Ja, det finns en Strindbergsstund för alla och för alla tillfällen.</em></p>
+
+      <p class="intro-contact">För ytterligare information ring <a href="tel:+46702746711">070‑2746711</a> eller eposta: <a href="mailto:anita_s_persson@hotmail.com">anita_s_persson@hotmail.com</a></p>
+
+      <nav id="navigation">
+        <ul>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#vandringar">Vandringar</a></li>
+          <li><a href="#anita">Anita Persson</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="main-container">
+    <div class="main wrapper">
+
+      <section id="walks-intro">
+        <h1>33 år på vandring</h1>
+        <p>Att exempelvis tillsammans vandra genom den kända eller okända staden där författaren vandrat, där dikterna tillkommit, där dramat utspelar sig, ger nya perspektiv och berikar läsupplevelser och ”vardagsvandringar”.</p>
+
+        <p>Jag vet, då jag har vandrat med August Strindberg sedan 1981 varje vår, sommar, höst och till och med på vintern i snöyra.</p>
+
+        <em>År 2016 går vi följande programmerade vandringar oberoende av väder och vind.<br>Deltagande i vandringar kostar <strong>100 kronor</strong> (exkl resor).</em>
+      </section>
+
+      <section id="walks">
+        <h1>Stadsvandringar</h1>
+
+            <article id="sodermalm" class="event-description event-type-walk">
+              <h1>”Det var en afton i början av maj…”</h1>
+              <img src="img/katarina.jpg" alt=""> Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat- tarens <strong class="event-name">Södermalm</strong>. Men här möter också Bellman, Katarina kyrkogård och klangen från Vita Bergen.
+
+
+              <footer>
+                <label>Datum:</label>
+                <ul class="dates">
+                    <li><time datetime="2016-05-05">torsdag 5 maj</time> – samling ovanför Stadsmuseets trappa  (biljett Medeltidsmuseet).</li>
+                    <li><time datetime="2016-08-18">torsdag 18 augusti</time> – samling vid Mariatorget/Swedenborgs staty.</li>
+                </ul>
+
+                  <p><label>Tid:</label> <time datetime="18:00">18:00</time></p>
+              </footer>
+            </article>
+
+
+      </section>
+
+      <section id="excursions">
+        <h1>Utflykter</h1>
+
+            <article id="kymmendo" class="event-description event-type-excursion">
+              <h1>”O, du min grönskande ö, blomkorg i havets våg”</h1>
+              <img src="img/anita_kymmendo.jpg" alt=""> Strindbergs sinnebild för skärgården kan välgrundat anses vara <strong class="event-name">Kymmendö</strong>, Hemsö. Hit flydde han i fadersuppror för att skriva och odla och för att njuta av samvaron med sin första familj och vänner. Vandringen över ön går i ”Hemsöborna”s texter och hus i författarens liv.
+
+
+              <footer>
+                <label>Datum:</label>
+                <ul class="dates">
+                    <li><time datetime="2016-07-18">måndag 18 juli</time> laskjfaölskdfj</li>
+                    <li><time datetime="2016-08-15">måndag 15 augusti</time> laskjfaölskdfj</li>
+                </ul>
+
+                  <p><label>Tid:</label> ca kl<time datetime="11:00">11:00</time>, när båt från Stockholm anlänt. Kolla båttider!</p>
+                  <p>Samling Kymmendös båtbrygga. Medtag gärna matsäck och baddräkt!</p>
+              </footer>
+            </article>
+
+      </section>
+
+      <script type="text/html" id="timeline_tmpl">
+        <section id="timeline">
+          <p class="intro">År <strong>2015</strong> går vi följande programmerade vandringar oberoende av väder och vind.<br>
+            Deltagande i vandringar kostar <strong>100 kronor</strong> (exkl resor).</p>
+          <h2 class="timeline-walks">Vandringar</h2>
+          <h2 class="timeline-excursions">Utflykter</h2>
+          <ul class="dates">
+            <% for ( var i = 0; i < dates.length; i++ ) { %>
+              <li class="<%=dates[i].elClass%>">
+                <a href="#<%=dates[i].event.id%>">
+                  <h3><time datetime="<%=dates[i].date%>"><%=dates[i].dateName%></time> <span class="event-name"><%=dates[i].event.name%></span></h3>
+                  <em class="quote"><%=dates[i].event.quote%></em>
+                </a>
+                <div class="description"></div>
+              </li>
+            <% } %>
+          </ul>
+        </section>
+      </script>
+
+      <script type="text/html" id="today_tmpl">
+        <li class="date today">Idag: <%=year%>-<%=month%>-<%=day%></li>
+      </script>
+
+      <section id="about">
+        <h1>Om Anita Persson</h1>
+
+        <p>Jag, Anita Persson, var, efter många års aktiviteter i Strindbergssällskapet, intendent på Strindbergsmuseet fram till 1994. Därefter är jag vida anlitad föreläsare/kåsör, vandrare och även skribent.</p>
+
+        <img src="img/anita_vandring.jpg" alt="" class="info-image-right">
+
+        <p>Jag är pedagog och "folkbildare" och anser att författare och deras texter inte enbart är till för att njutas av utan också för att användas i våra dagliga liv i med- som motgångar, för att fylla på tankar, fantasier och möjligheter – som energi – som kunskap – som erfarenhet.</p>
+
+        <h2>Jag har också bland annat:</h2>
+        <ul>
+          <li>föreläst på Grafiska sällskapet och i Nacka konstförening</li>
+
+          <li>föreläst på Nobelmuseet om Strindberg och Svenska Akademien i samarbete med Iréne Lindh samt i samma ämne skrivit artikel till NEs nyhetssida</li>
+
+          <li>föreläst om Strindberg och Albert Engström i Grisslehamn i Engströms ateljé</li>
+
+          <li>föreläst på TV i anslutning till kollationeringen inför inspelningen av Peter Birros TV-film om den unge Strindberg</li>
+
+          <li>mottagit DN På Stans ”känga” 1987</li>
+
+          <li>varit samtalspartner och medverkande i inspelningarna av TVs program om personen Strindberg och Strindberg idag</li>
+
+          <li>varit med och startat Strindbergssällskapets årsbok Strindbergiana och ingick 1985–1992 i dess redaktion</li>
+
+          <li>varit redaktör och initiativtagare till antologin ”Ja, må han leva – 22 kvinnor från 11 länder skriver om Strindberg”</li>
+
+          <li>besökt flera bibliotek, studieförbund, andra sammanslutningar och organisationer för att presentera boken, som även anmälts på Bok- och Biblioteksmässan i Göteborg</li>
+
+          <li>planerat och deltagit i Dramatens poesihörna i samarbete med skådespelerskan Iréne Lindh, med bl a Strindberg och Ibsen, Strindberg och försvarsfrågan, Strindberg och kungamakt, Strindbergs Stockholm, Strindberg och Svenska Akademien, Strindberg och Linné, Strindberg och Intima Teatern, Strindberg och fredsfrågan, Strindberg och Dramatiska Teatern</li>
+
+          <li>stadsvandrat med åtskilliga gymnasie- och vuxenskoleelever</li>
+
+          <li>stadsvandrat och skärgårdsvandrat med fackliga organisationer, universitetsgrupper även från andra delar av Europa</li>
+
+          <li>stadsvandrat med presumtiva teaterbesökare från Dramaten till Strindbergs Intima Teater</li>
+
+          <li>lett flera studiecirklar – om enskilda böcker samt om Strindbergs tid och samhälle</li>
+
+          <li>skrivit boken ”Vandra med Strindberg” – 12 vandringar i Stockholm och Stockholms skärgård samt i Strindbergs litteratur.</li>
+
+          <li>presenterat August för invandrargrupper under titeln ”Varför talar man så mycket om August Strindberg?”</li>
+
+          <li>återkommande kåserat för blivande läkare på Karolinska Sjukhuset</li>
+
+          <li>väglett kanadensisk, svensk och engelsk TV i Strindbergs miljöer</li>
+
+          <li>”vandrat” i radioprogrammet ”Boktornet” i P1 tillsammans med skådespelaren Reine Brynolfsson</li>
+
+          <li>planerat och genomfört Strindbergdagar och –kvällar för personal på mindre och större företag</li>
+
+          <li>lunch- och middagsvandrat med födelsedagsbarn och deras gäster på väg till födelsedagsfesten</li>
+
+          <li>stadsvandrat med väninnor för att stimulera smaklökarna inför lyxmiddag</li>
+
+          <li>återkommande kåserat i Tegnérlunden för ”gammal” studentgrupp, som årligen har sillsexa i skuggan av Strindbergmonumentet</li>
+
+          <li>guidat utflykter till Kymmendö med studenter från hela världen i samarbete med Svenska Institutet</li>
+
+          <li>föreläst för studenter på Universitetet i Sofia, Bulgarien, om bla Strindberg och Ibsen, Strindbergs liv samt deltagit vid lanseringen av ny översättning av Röda Rummet</li>
+
+          <li>föreläst på Svenska Ambassaden i Tokyo, Japan</li>
+
+          <li>skrivit artiklar om bl a Strindberg och hans Stockholm i utländska skrifter</li>
+
+          <li>skrivit recensioner</li>
+
+          <li>fått ABF-Stockholms kulturpris</li>
+
+          <li>planerat och deltagit i nio torsdagar i P4 under rubriken ”Strindbergs Stockholm”</li>
+
+          <li>i anslutning till uppsättningen av Ett drömspel föreläst i Örebro, dels för inblandade på teatern vid kollationeringen och dels för presumtiv publik, samt skrivit bidrag i programmet</li>
+
+          <li>planerat och deltagit i TVs program om Strindbergs liv och Strindberg i världen idag</li>
+
+          <li>tilldelats Södermalms arbetarinstituts stipendium 2010</li>
+
+          <li>föreläst på Stockholms Nation i Uppsala om ”Vad satte Uppsala för spår hos Strindberg?”</li>
+
+          <li>föreläst ABF om Strindbergs civilisations- och systemkritik – ”Det går framåt – Ja, framåt – åt helvete!”</li>
+
+          <li>föreläst i Umeå och Karlshamn om Strindberg och kvinnofrågan – ”Jag är endast teoretiskt kvinnohatare”</li>
+
+          <li>föredragit ”Att läsa staden i vandring med August Strindberg” i Strassbourg</li>
+
+          <li>vandrat med döv-stum-blinda i Strindbergs Stockholm</li>
+
+          <li>vandrat med NHR Stockholm</li>
+
+          <li>skrivit boken Vandra med Strindberg – fem vandringar i Stockholm</li>
+
+          <li>deltagit vid Dalateaterns kollationering inför föreställningen av Hemsöborna</li>
+
+          <li>tipsat TVs Babel-redaktion ang Strindbergsinfo
+
+          <li>mottagit Fosams folkbildningsstipendium 2012</li>
+
+          <li>Läsecirklar om ”Fröken Julie”, ”Ockulta dagboken” och Strindbergs liv</li>
+
+          <li>Inlägg i anslutning till Strindberg-program med musik</li>
+
+          <li>samtalat om Strindbergs hud med hudprofessor på Karolinska universitetsbiblioteket</li>
+
+          <li>vandrat, föreläst och samtalat med herrar med medföljande inom några loger</li>
+
+          <li>samtalat om Stockholmsboken 2012 ”En dåres försvarstal” på olika bibliotek</li>
+
+          <li>agerat ”Braständare” till Stadsteaterns och Dalateaterns personal och publik</li>
+
+          <li>agerat samtalsledare med regissörer och översättare för teaterpubliken på Stadsteatern</li>
+
+          <li>agerat ”konsult” i anslutning till TV</li>
+
+          <li>guidat i Stockholms skärgård med Strömma kanal och Blidösund</li>
+
+          <li>vandrat med bl a Sandrewvännerna, Stockholms Landstings personal</li>
+
+          <li>
+            mottagit Fosams folkbildningsstipendium 2012
+            <img src="img/fosam_pris.jpg" alt="" class="info-image-right">
+          </li>
+
+          <li>hållit läsecirklar om ”Fröken Julie”, ”Ockulta dagboken” och Strindbergs liv</li>
+
+          <li>skrivit inlägg i anslutning till Strindberg-program med musik</li>
+
+          <li>samtalat om Strindbergs hud med hudprofessor på Karolinska universitetsbiblioteket</li>
+
+          <li>vandrat, föreläst och samtalat med herrar med medföljande inom några loger</li>
+
+          <li>samtalat om Stockholmsboken 2012 ”En dåres försvarstal” på olika bibliotek</li>
+
+          <li>
+            mottagit Stockholms Stads högsta bemärkelse Sankt Eriks-medaljen
+            <img src="img/st_eriks_medalj.jpg" alt="" class="info-image-right">
+          </li>
+
+          <li>agerat ”Braständare” till Stadsteaterns och Dalateaterns personal och publik</li>
+
+          <li>agerat samtalsledare med regissörer och översättare för teaterpubliken på Stadsteatern</li>
+
+          <li>agerat ”konsult” i anslutning till TV</li>
+
+          <li>guidat i Stockholms skärgård med Strömma kanal och Blidösund</li>
+
+          <li>vandrat med bl a Sandrewvännerna, Stockholms Landstings personal</li>
+
+        </ul>
+      </section>
+
+    </div> <!-- #main -->
+  </div> <!-- #main-container -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src=""><\/script>')</script>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40141044-1', 'strindberganita.se');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

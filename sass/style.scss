@@ -71,7 +71,7 @@ header {
       position: relative;
       text-align: left;
       &:after {
-        background: image_url("anita_strindberg_vagg.jpg") 0 -50px no-repeat;
+        background: url('../img/anita_strindberg_vagg.jpg') 0 -50px no-repeat;
         content: ".";
         display: block;
         right: 51%;
