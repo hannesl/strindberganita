@@ -35,4 +35,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('default', ['template', 'sass']);
+gulp.task('watch', function() {
+  gulp.watch('src/*', ['template']);
+  gulp.watch('sass/*.scss', ['sass']);
+});
+
+gulp.task('default', ['watch', 'template', 'sass']);
