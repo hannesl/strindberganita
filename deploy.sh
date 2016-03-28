@@ -12,16 +12,10 @@ select yn in "Yes" "No"; do
 done
 
 # Get the path to the site directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/dist && pwd )"
 
 echo "Copying site files, please be patient..."
 s3cmd sync --delete-removed \
-  --exclude ".sass-cache*"\
-  --exclude ".git*"\
-  --exclude ".gitignore"\
-  --exclude "deploy.sh"\
-  --exclude "sass*"\
-  --exclude "config.rb"\
   --exclude ".DS_Store"\
   $DIR/ s3://www.strindberganita.se/
 
