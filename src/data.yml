@@ -3,7 +3,7 @@ walks:
     title: ”Det var en afton i början av maj…”
     body: >
       <img src="img/katarina.jpg" alt="">
-      Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat tarens <strong class="event-name">Södermalm</strong>. Men här  nns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
+      Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat tarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
       - date: "2016-07-28"
         description: Samling Mariatorget vid Swedenborgs staty.
@@ -51,7 +51,7 @@ walks:
   - slug: kungstradgarden
     title: ”Här... erbjuds det vackraste Stockholm har att visa...”
     body: >
-      <strong class="event-name">Kungsträdgården</strong> – med utsikt mot Söder och om- given av ett kulturliv med restauranger, teatrar och därtill bostäder – gav upphov till många avgörande händelser och möten i författarens liv.
+      <strong class="event-name">Kungsträdgården</strong> – med utsikt mot Söder och omgiven av ett kulturliv med restauranger, teatrar och därtill bostäder – gav upphov till många avgörande händelser och möten i författarens liv.
     dates:
       - date: "2016-07-21"
     time:
