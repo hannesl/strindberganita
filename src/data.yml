@@ -5,7 +5,7 @@ walks:
       <img src="img/katarina.jpg" alt="">
       Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat tarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
-      - date: "2017-07-27"
+      - date: "2018-07-17"
     time:
       value: "18:00"
       suffix: (–19:30)
@@ -17,9 +17,10 @@ walks:
       <img src="img/strindbergmonumentet.jpg" alt="">
       En vandring som följer Strindbergs sista färd 19 maj 1912 från hans bostad Drottninggatan 85 till graven på Norra kyrkogården <em>”icke i de rikas kvarter på fåfängans marknad”</em> och passerar första hustruns grav. En vandring också i försoningsdramat <strong class="event-name">Stora Landsvägen</strong>s texter.
     dates:
-      - date: "2017-05-19"
-        description: – Strindbergs begravningsdag.
-      - date: "2017-08-24"
+      - date: "2018-05-19"
+        description: – Strindbergs begravningsdag. 14.00 (–16.00)
+      - date: "2018-08-23"
+        description: 18.00 (–20.00)
     time:
       value: "18:00"
       suffix: (–20:00)
@@ -30,10 +31,10 @@ walks:
     body: >
       <strong class="event-name">Djurgården</strong> är fylld av platser från Strindbergs liv och verk. Tidvis förlades boende, morgonpromenader och arbetsgömmen hit. Skådeplats för författarens kulturhistoriska gärningar och ”introduktion” i krogarnas nöjesliv.
     dates:
-      - date: "2017-07-13"
+      - date: "2018-07-15"
     time:
-      value: "18:00"
-      suffix: (–19:30)
+      value: "14:00"
+      suffix: (15:30)
     info:
       - Samling Djurgårdsbron/Strandvägen.
   - slug: morgonpromenad
@@ -41,8 +42,8 @@ walks:
     body: >
       Vi vandrar Strindbergs <strong class="event-name">morgonpromenad</strong> – möter människor på Drottninggatans ”trottoar”, viker av ”i Fredsgatans halvdunkel” och vidare genom den händelserika Kungsträdgården och ”löpgraven”, Arsenalsgatan, fram till ”en nationell bildningsanstalt” och ”Stockholms ungkarlsklubb”.
     dates:
-      - date: "2017-06-12"
-      - date: "2017-08-18"
+      - date: "2018-06-04"
+      - date: "2018-08-18"
         description: (OBS! Biljett till Kulturfestivalen.)
     time:
       value: "07:00"
@@ -54,7 +55,7 @@ walks:
     body: >
       <strong class="event-name">Kungsträdgården</strong> – med utsikt mot Söder och omgiven av ett kulturliv med restauranger, teatrar och därtill bostäder – gav upphov till många avgörande händelser och möten i författarens liv.
     dates:
-      - date: "2017-07-20"
+      - date: "2018-07-12"
     time:
       value: "18:00"
       suffix: (-19:30).
@@ -65,8 +66,8 @@ walks:
     body: >
       Författarens födelseplats i samma hus – nu rivet – som faderns arbetsplats. Här fanns simskola och ”Midsommar”s kaj för skutornas färd på Mälaren. I <strong class="event-name">Gamla Stan</strong> samlade han miljöer och personer till sitt framtida diktande.
     dates:
-      - date: "2017-07-06"
-      - date: "2017-08-17"
+      - date: "2018-06-28"
+      - date: "2018-08-09"
         description: (OBS! Biljett till Kulturfestivalen.)
     time:
       value: "18:00"
@@ -78,7 +79,7 @@ walks:
     body: >
       Stockholm var under författarens tid en mycket <strong class="event-name">teatertät stad</strong>, där hans verk hade både jublande framgångar och kaotiska motgångar. Här var de omskrivna urpremiärerna. Här presenterades den intima scenen samtidigt som filmen tog sina första stapplande steg.
     dates:
-      - date: "2017-08-10"
+      - date: "2018-08-02"
     time:
       value: "18:00"
       suffix: (–20:00).
@@ -89,7 +90,7 @@ walks:
     body: >
       <strong class="event-name">Östermalm</strong> beboddes av författaren många gånger. Här inträffade dramatiska händelser både i hans litteratur och liv. Här skapades bl a ”Ett Drömspel”, genomlevdes äktenskapet med Harriet Bosse och här blommade Beethoven-febern.
     dates:
-      - date: "2017-08-03"
+      - date: "2018-07-26"
     time:
       value: "18:00"
       suffix: (–19:30).
@@ -101,10 +102,10 @@ walks:
       <strong class="event-name">Ingmar Bergman</strong> påstår att ”om man lever i en Strindbergstradition, så andas man Strindbergsluft”. Detta manifesterades på många sätt tex hans Strindbergsuppsättningar på bl a Dramaten och hans bostad på Karlaplan.
       På denna vandring korsar Strindberg ibland Bergmans konst och liv från Dramaten till Karlaplan.
     dates:
-      - date: "2017-08-16"
-        description: "18:00 (–19:30)"
-      - date: "2017-08-19"
-        description: "15:00 (-16:30)"
+      - date: "2018-08-16"
+    time:
+      value: "18:00"
+      suffix: (–20:00).
     info:
       - Samling stora trappan framför Dramaten.
       - "Ciceroner: också TV-producenten och Bergman-kännaren Marie Nyreröd."
@@ -114,7 +115,7 @@ walks:
     body: >
       1908 flyttade Strindberg till sin sista bostad i ”Blå Tornet”. <strong class="event-name">Kvarteren</strong> väckte minnen av familj och vänner, kyrko- och restaurangbesök och historieforskning. Vägen till den lilla intima scenen vid Norra Bantorget gav fröjder och bekymmer.
     dates:
-      - date: "2017-08-20"
+      - date: "2018-08-20"
         description: (OBS! Biljett Kulturfestivalen)
     time:
       value: "12:00"
@@ -129,53 +130,49 @@ excursions:
       <img src="img/anita_kymmendo.jpg" alt="">
       Strindbergs sinnebild för skärgården kan välgrundat anses vara <strong class="event-name">Kymendö, Hemsö</strong>. Hit flydde han i fadersuppror för att skriva och odla och för att njuta av samvaron med sin första familj och vänner. Vandringen över ön går i ”Hemsöbornas” texter och hus i författarens liv.
     dates:
-      - date: "2017-08-12"
+      - date: "2018-08-11"
     time:
       prefix: ca kl
       value: "10:45"
       suffix: "(–12:30), när båt från Stockholm och Saltsjöbaden anlänt. Kontrollera båttiderna!"
     info:
       - Samling Kymendös båtbrygga.
-      - Pris 100 kr (exkl resor).
-      - Medtag matsäck!
+      - Medtag gärna matsäck!
   - slug: furusund
     title: ”...en vacker lövstrand med bryggor... små italienska villor”
     body: >
       <img src="img/anita_furusund.jpg" alt="">
       <strong>Furusund</strong> blev Strindbergs sista skärgårdsglädje, som satte många avtryck i hans litteratur. Här möter den legendariske skaparen av <strong class="event-name">Furusund</strong>, samlaren Christian Hammer. Från glödande optimism till djupaste vemod sommarlevde författaren i hyrda rum eller hus – ensam eller med familj, släkt och vänner.
     dates:
-      - date: "2017-08-05"
+      - date: "2018-08-04"
     time:
-      value: "14:30"
-      suffix: (–17:00)
+      value: "14:00"
+      suffix: (–16:00)
     info:
       - Samling vid ångbåtsbryggan i Furusund.
-      - Pris 100 kr.
       - I samarbete med Furusunds kulturförening.
   - slug: dalaro
     title: ”Detta var hans landskap... fattiga knaggliga gråstensholmar med granskog...”
     body: >
       Författaren besökte <strong class="event-name">Dalarö</strong> tio somrar för att hyra i familj, bo på hotell, vara på genomresa eller för proviantering. Här börjar ”Hemsöborna”, sker mötet med sommarprästen, flyddes kärleken, uppvaktades kvinnor samt målades i olja.
     dates:
-      - date: "2017-07-01"
+      - date: "2018-06-30"
     time:
       value: "15:00"
       suffix: (-17:00)
     info:
       - Samling framför Dalarös Tullhus.
-      - Pris 100 kr.
   - slug: runmaro
     title: ”...allt under det jag rustar till en dikt om Silfverträsket...”
     body: >
       Strindberg återkom för några år 1889 till Sverige och tillbringar tre somrar på <strong class="event-name">Runmarö</strong>. Vistelserna präglades av skilsmässan från första hustrun och oron för barnen men också av experiment, fantasifulla teorier och arbetslust.
     dates:
-      - date: "2017-07-08"
+      - date: "2018-07-07"
     time:
       prefix: Ca kl
       value: "09:30"
       suffix: (–16:00) när båt från Stavsnäs anlänt.
     info:
       - Anslutningsbuss från Slussen. Kontrollera tiderna!
-      - Pris 100 kr (exkl resor).
       - Medtag matsäck!
       - I samarbete med Runmarö hembygdsförening.
