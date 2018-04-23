@@ -5,7 +5,7 @@ walks:
       <img src="img/katarina.jpg" alt="">
       Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat tarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
-      - date: "2018-07-17"
+      - date: "2018-07-19"
     time:
       value: "18:00"
       suffix: (–19:30)
@@ -110,18 +110,6 @@ walks:
       - Samling stora trappan framför Dramaten.
       - "Ciceroner: också TV-producenten och Bergman-kännaren Marie Nyreröd."
       - OBS! Biljetter Kulturfestivalen.
-  - slug: kvarteren
-    title: ”Ett Babels torn med allehanda folk”
-    body: >
-      1908 flyttade Strindberg till sin sista bostad i ”Blå Tornet”. <strong class="event-name">Kvarteren</strong> väckte minnen av familj och vänner, kyrko- och restaurangbesök och historieforskning. Vägen till den lilla intima scenen vid Norra Bantorget gav fröjder och bekymmer.
-    dates:
-      - date: "2018-08-20"
-        description: (OBS! Biljett Kulturfestivalen)
-    time:
-      value: "12:00"
-      suffix: (–12:30).
-    info:
-      - Samling utanför Strindbergs Intima Teater på Norra Bantorget.
 
 excursions:
   - slug: kymendo
