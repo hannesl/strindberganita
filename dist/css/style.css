@@ -723,6 +723,25 @@ section h1 {
     height: 2px;
     margin-bottom: 1em; }
 
+.walks-wreath {
+  position: relative;
+  float: right;
+  width: 160px;
+  margin: 0 0 20px 20px;
+  transform: rotate(3deg); }
+  .walks-wreath img {
+    width: 100%;
+    opacity: 0.8; }
+  .walks-wreath__years {
+    display: block;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 64px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -70%; }
+
 #timeline {
   text-align: center; }
   #timeline:before {

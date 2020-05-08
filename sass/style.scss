@@ -71,7 +71,7 @@ header {
       position: relative;
       text-align: left;
       &:after {
-        background: url('../img/anita_strindberg_vagg.jpg') 0 -50px no-repeat;
+        background: url("../img/anita_strindberg_vagg.jpg") 0 -50px no-repeat;
         content: ".";
         display: block;
         right: 51%;
@@ -102,7 +102,28 @@ section h1 {
   @include fancy-border-top();
   margin: 1em 0;
   h1 {
+  }
+}
 
+.walks-wreath {
+  position: relative;
+  float: right;
+  width: 160px;
+  margin: 0 0 20px 20px;
+  transform: rotate(3deg);
+  img {
+    width: 100%;
+    opacity: 0.8;
+  }
+  &__years {
+    display: block;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 64px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -70%;
   }
 }
 
@@ -120,7 +141,7 @@ section h1 {
   }
 
   @media only screen and (min-width: 480px) {
-    @include fancy-border-top-off ();
+    @include fancy-border-top-off();
     margin-top: 3.2em;
     padding-top: 3em;
     position: relative;
@@ -166,14 +187,13 @@ section h1 {
     }
   }
 
-  &>ul {
+  & > ul {
     list-style-type: none;
     padding: 0;
   }
 
-
   @media only screen and (min-width: 480px) {
-    &>ul {
+    & > ul {
       margin-top: 3.4em;
     }
   }
@@ -182,7 +202,7 @@ section h1 {
     margin: 1.4em 0;
 
     &.passed {
-      @include opacity(.8);
+      @include opacity(0.8);
     }
 
     &.next-event a {
