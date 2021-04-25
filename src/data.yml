@@ -3,7 +3,7 @@ walks:
     title: ”Det var en afton i början av maj…”
     body: >
       <img src="img/katarina.jpg" alt="">
-      Inledningen av succéromanen ”Röda Rummet” – ett målande  panorama över en älskad stad – är det mest kända av förfat tarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
+      Inledningen av succéromanen ”Röda Rummet” – ett målande panorama över en älskad stad – är det mest kända av författarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
       - date: "2020-07-16"
     time:
@@ -88,20 +88,20 @@ walks:
       suffix: (–19:30).
     info:
       - Samling Strandvägen – hörnet av Grev Magnigatan.
-  - slug: ingmar_bergman
-    title: ”… det är tur att Strindberg finns. Vad skulle man annars ta sig till?”
-    body: >
-      <strong class="event-name">Ingmar Bergman</strong> påstår att ”om man lever i en Strindbergstradition, så andas man Strindbergsluft”. Detta manifesterades på många sätt tex hans Strindbergsuppsättningar på bl a Dramaten och hans bostad på Karlaplan.
-      På denna vandring korsar Strindberg ibland Bergmans konst och liv från Dramaten till Karlaplan.
-    dates:
-      - date: "2020-08-15"
-    time:
-      value: "12:00"
-      suffix: (–14:00).
-    info:
-      - Samling stora trappan framför Dramaten.
-      - "Ciceroner: också TV-producenten och Bergman-kännaren Marie Nyreröd."
-      - OBS! Biljetter Kulturfestivalen.
+  # - slug: ingmar_bergman
+  #   title: ”… det är tur att Strindberg finns. Vad skulle man annars ta sig till?”
+  #   body: >
+  #     <strong class="event-name">Ingmar Bergman</strong> påstår att ”om man lever i en Strindbergstradition, så andas man Strindbergsluft”. Detta manifesterades på många sätt tex hans Strindbergsuppsättningar på bl a Dramaten och hans bostad på Karlaplan.
+  #     På denna vandring korsar Strindberg ibland Bergmans konst och liv från Dramaten till Karlaplan.
+  #   dates:
+  #     - date: "2020-08-15"
+  #   time:
+  #     value: "12:00"
+  #     suffix: (–14:00).
+  #   info:
+  #     - Samling stora trappan framför Dramaten.
+  #     - "Ciceroner: också TV-producenten och Bergman-kännaren Marie Nyreröd."
+  #     - OBS! Biljetter Kulturfestivalen.
 
 excursions:
   - slug: kymendo
