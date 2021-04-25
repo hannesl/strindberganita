@@ -5,14 +5,14 @@ This is a one-page website with some JS navigation. It is built with
 
 ## File structure
 
-* **dist/** – This is where the generated website files are stored. *Do not edit
-  the HTML or CSS files in this directory!*
-* **sass/** – The SASS source files, which are converted to CSS.
-* **src/** – The content of the website – `data.yml` contains event data and
+- **dist/** – This is where the generated website files are stored. _Do not
+  edit the HTML or CSS files in this directory!_
+- **sass/** – The SASS source files, which are converted to CSS.
+- **src/** – The content of the website – `data.yml` contains event data and
   `index.hbs` contains the HTML template for the site.
-* **deploy.sh** – The deploy script.
-* **gulpfile.js** – The Gulp configuration.
-* **package.json** – Defines the NPM packages needed to build this website.
+- **deploy.sh** – The deploy script.
+- **gulpfile.js** – The Gulp configuration.
+- **package.json** – Defines the NPM packages needed to build this website.
 
 ## Installing dependencies
 

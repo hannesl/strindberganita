@@ -1,43 +1,49 @@
-var gulp = require('gulp');
-var yaml = require('js-yaml');
-var handlebars = require('gulp-compile-handlebars');
-var rename = require('gulp-rename');
-var fs = require('fs');
-var moment = require('moment');
-var sass = require('gulp-sass');
-var compass = require('compass-importer');
+var gulp = require("gulp");
+var yaml = require("js-yaml");
+var handlebars = require("gulp-compile-handlebars");
+var rename = require("gulp-rename");
+var fs = require("fs");
+var moment = require("moment");
+var sass = require("gulp-sass");
+var compass = require("compass-importer");
 
-moment.locale('sv');
+moment.locale("sv");
 
-gulp.task('template', function () {
-  var templateData = yaml.safeLoad(fs.readFileSync('src/data.yml', 'utf-8'));
+gulp.task("template", function () {
+  var templateData = yaml.safeLoad(fs.readFileSync("src/data.yml", "utf-8"));
 
   var processEvent = function (event) {
     event.dates = event.dates.map(function (date) {
-      date.formatted = moment(date.date).format('dddd D MMMM');
+      date.formatted = moment(date.date).format("dddd D MMMM");
       return date;
     });
     return event;
   };
 
-  templateData.walks = templateData.walks.map(processEvent);
-  templateData.excursions = templateData.excursions.map(processEvent);
+  templateData.walks = templateData.walks
+    ? templateData.walks.map(processEvent)
+    : [];
+  templateData.excursions = templateData.excursions
+    ? templateData.excursions.map(processEvent)
+    : [];
 
-  return gulp.src('src/index.hbs')
+  return gulp
+    .src("src/index.hbs")
     .pipe(handlebars(templateData))
-    .pipe(rename('index.html'))
-    .pipe(gulp.dest('dist'));
+    .pipe(rename("index.html"))
+    .pipe(gulp.dest("dist"));
 });
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({ importer: compass }).on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+gulp.task("sass", function () {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(sass({ importer: compass }).on("error", sass.logError))
+    .pipe(gulp.dest("./dist/css"));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('src/*', ['template']);
-  gulp.watch('sass/*.scss', ['sass']);
+gulp.task("watch", function () {
+  gulp.watch("src/*", ["template"]);
+  gulp.watch("sass/*.scss", ["sass"]);
 });
 
-gulp.task('default', ['watch', 'template', 'sass']);
+gulp.task("default", ["watch", "template", "sass"]);
