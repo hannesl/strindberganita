@@ -1,26 +1,39 @@
 walks:
+  - slug: gamla_stan
+    title: ”I ett gammalt hus vid Riddarholmen...”
+    body: >
+      Författarens födelseplats i samma hus – nu rivet – som faderns arbetsplats. Här fanns simskola och ”Midsommar”s kaj för skutornas färd på Mälaren. Här samlade han miljöer och personer till sitt framtida diktande. I <strong class="event-name">Gamla Stan</strong> övade han umgänge med skrivande och böcker och här utspelas flera ungdomsverk.
+    dates:
+      - date: "2023-07-01"
+    time:
+      value: "18:00"
+      suffix: (–19:30)
+    info:
+      - Samling Evert Taubes Terrass på Riddarholmen.
+
   - slug: kungstradgarden
     title: ”Här... erbjuds det vackraste Stockholm har att visa...”
     body: >
       <strong class="event-name">Kungsträdgården</strong> – med utsikt mot Söder och omgiven av ett kulturliv med restauranger, teatrar och därtill bostäder – gav upphov till många avgörande händelser och möten i författarens liv.
     dates:
-      - date: "2022-07-07"
+      - date: "2023-07-15"
     time:
       value: "18:00"
       suffix: (-19:30).
     info:
       - Samling Kungsträdgården vid Karl XII staty.
 
-  - slug: ostermalm
-    title: ”Här rivs för att få luft och ljus”
+  - slug: arbetarrorelsen
+    title: ”Slopa Öfverklassen! Så få i se sen!”
     body: >
-      <strong class="event-name">Östermalm</strong> beboddes av författaren många gånger. Här inträffade dramatiska händelser både i hans verk och liv. Här skapades bl a ”Ett Drömspel”, genomlevdes äktenskapet med Harriet Bosse och här blommade Beethovenfebern.
+      Strindberg levde under en tid då motsättningarna blev synliga i det svenska industrisamhället. <strong>Arbetarrörelsen</strong> organiserade sig och författarens vän Hjalmar Branting blev samtalspartner. Författarens kontakter med rörelsens förgrundsfigurer och dess aktuella frågor möter i denna vandring.
     dates:
-      - date: "2022-07-21"
+      - date: "2023-07-29"
     time:
-      value: "18:00"
+      value: "14:00"
+      suffix: (–15.30)
     info:
-      - Samling Strandvägen – hörnet av Grev Magnigatan
+      - Samling framför Adolf Fredriks kyrka.
 
   - slug: sodermalm
     title: ”Det var en afton i början av maj…”
@@ -28,42 +41,19 @@ walks:
       <img src="img/katarina.jpg" alt="">
       Inledningen av succéromanen ”Röda Rummet” – ett målande panorama över en älskad stad – är det mest kända av författarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
-      - date: "2022-08-04"
+      - date: "2023-08-12"
     time:
       value: "18:00"
       suffix: (–19:30)
     info:
       - Samling Mariatorget vid Swedenborgs staty.
 
-  - slug: djurgarden
-    title: ”...härd för myggor och spindlar”
-    body: >
-      <strong class="event-name">Djurgården</strong> är fylld av platser från Strindbergs liv och verk. Tidvis förlades boende, morgonpromenader och arbetsgömmen hit. Skådeplats för författarens kulturhistoriska gärningar och ”introduktion” i krogarnas nöjesliv.
-    dates:
-      - date: "2022-08-11"
-    time:
-      value: "18:00"
-    info:
-      - Samling Djurgårdsbron/Strandvägen.
-
-  - slug: gamla_stan
-    title: ”I ett gammalt hus vid Riddarholmen...”
-    body: >
-      Författarens födelseplats i samma hus – nu rivet – som faderns arbetsplats. Här fanns simskola och ”Midsommar”s kaj för skutornas färd på Mälaren. Här samlade han miljöer och personer till sitt framtida diktande. I <strong class="event-name">Gamla Stan</strong> övade han umgänge med skrivande och böcker och här utspelas flera ungdomsverk.
-    dates:
-      - date: "2022-08-18"
-    time:
-      value: "18:00"
-      suffix: (–19:30)
-    info:
-      - Samling Evert Taubes Terrass på Riddarholmen.
-
   - slug: morgonpromenad
     title: ”Morgonen har något med sig som ger ungdom i sinnet”
     body: >
       Vi vandrar Strindbergs <strong class="event-name">morgonpromenad</strong> – möter människor på Drottninggatans ”trottoar”, viker av ”i Fredsgatans halvdunkel” och vidare genom den händelserika Kungsträdgården och ”löpgraven”, Arsenalsgatan, fram till ”en nationell bildningsanstalt” och ”Stockholms ungkarlsklubb”.
     dates:
-      - date: "2022-08-20"
+      - date: "2023-08-18"
         description: (OBS! Biljett Stadsmuseet.)
     time:
       value: "07:00"
@@ -71,13 +61,38 @@ walks:
     info:
       - Samling i Tegnérlunden vid Strindbergsmonumentet.
 
+  - slug: bergman
+    title: ”... det är tur att Strindberg finns. Vad skulle man annars ta sig till?”
+    body: >
+      <strong class="event-name">Ingmar Bergman</strong> påstår att ”om man lever i en Strindbergstradition, så andas man Strindbergsluft”. Detta manifesterades på många sätt t ex med hans Strindbergsuppsättningar på bl a Dramaten och hans bostad på Karlaplan. På denna vandring korsas Strindberg och Bergman i konst och i liv från Dramaten till Karlaplan.
+    dates:
+      - date: "2023-08-19"
+    time:
+      value: "14:00"
+      suffix: (–16.00)
+    info:
+      - Samling stora trappan framför Dramaten.
+      - Ciceroner också Bergman-kännaren Marie Nyrerö.
+      - OBS! Biljett Stadsmuseet.
+
+  - slug: ostermalm
+    title: ”Här rivs för att få luft och ljus”
+    body: >
+      <strong class="event-name">Östermalm</strong> beboddes av författaren många gånger. Här inträffade dramatiska händelser både i hans verk och liv. Här skapades bl a ”Ett Drömspel”, genomlevdes äktenskapet med Harriet Bosse och här blommade Beethovenfebern.
+    dates:
+      - date: "2023-08-26"
+    time:
+      value: "18:00"
+    info:
+      - Samling Strandvägen – hörnet av Grev Magnigatan
+
 excursions:
   - slug: dalaro
     title: ”Detta var hans landskap... fattiga knaggliga gråstensholmar med granskog...”
     body: >
       Författaren besökte <strong class="event-name">Dalarö</strong> tio somrar för att hyra i familj, bo på hotell, vara på genomresa eller för proviantering. Här börjar ”Hemsöborna”, sker mötet med sommarprästen, flyddes kärleken, uppvaktades kvinnor samt målades i olja.
     dates:
-      - date: "2022-07-09"
+      - date: "2023-07-08"
     time:
       value: "15:00"
       suffix: (-17:00)
@@ -90,7 +105,7 @@ excursions:
       <img src="img/anita_furusund.jpg" alt="">
       <strong>Furusund</strong> blev Strindbergs sista skärgårdsglädje, som satte många avtryck i hans litteratur. Här möter den legendariske skaparen av <strong class="event-name">Furusund</strong>, samlaren Christian Hammer. Från glödande optimism till djupaste vemod sommarlevde författaren i hyrda rum eller hus – ensam eller med familj, släkt och vänner.
     dates:
-      - date: "2022-07-23"
+      - date: "2023-07-22"
     time:
       value: "14:00"
       suffix: (–16:00)
@@ -104,7 +119,7 @@ excursions:
       <img src="img/anita_kymmendo.jpg" alt="">
       Strindbergs sinnebild för skärgården kan välgrundat anses vara <strong class="event-name">Kymendö, Hemsö</strong>. Hit flydde han i fadersuppror för att skriva och odla och för att njuta av samvaron med sin första familj och vänner. Vandringen över ön går i ”Hemsöbornas” texter och hus i författarens liv.
     dates:
-      - date: "2022-08-06"
+      - date: "2023-08-05"
     time:
       prefix: ca kl
       value: "11:00"
