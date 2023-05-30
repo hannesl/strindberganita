@@ -6,8 +6,8 @@ walks:
     dates:
       - date: "2023-07-01"
     time:
-      value: "18:00"
-      suffix: (–19:30)
+      value: "14:00"
+      suffix: (–15:30)
     info:
       - Samling Evert Taubes Terrass på Riddarholmen.
 
@@ -18,8 +18,8 @@ walks:
     dates:
       - date: "2023-07-15"
     time:
-      value: "18:00"
-      suffix: (-19:30).
+      value: "14:00"
+      suffix: (-15:30).
     info:
       - Samling Kungsträdgården vid Karl XII staty.
 
@@ -43,8 +43,8 @@ walks:
     dates:
       - date: "2023-08-12"
     time:
-      value: "18:00"
-      suffix: (–19:30)
+      value: "14:00"
+      suffix: (–15:30)
     info:
       - Samling Mariatorget vid Swedenborgs staty.
 
@@ -82,7 +82,7 @@ walks:
     dates:
       - date: "2023-08-26"
     time:
-      value: "18:00"
+      value: "14:00"
     info:
       - Samling Strandvägen – hörnet av Grev Magnigatan
 
