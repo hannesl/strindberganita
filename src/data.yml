@@ -1,12 +1,60 @@
 walks:
+  - slug: morgonpromenad
+    title: ”Morgonen har något med sig som ger ungdom i sinnet”
+    body: >
+      Vi vandrar Strindbergs <strong class="event-name">morgonpromenad</strong> – möter människor på Drottninggatans ”trottoar”, viker av ”i Fredsgatans halvdunkel” och vidare genom den händelserika Kungsträdgården och ”löpgraven”, Arsenalsgatan, fram till ”en nationell bildningsanstalt” och ”Stockholms ungkarlsklubb”.
+    dates:
+      - date: "2025-06-10"
+    time:
+      value: "07:00"
+    info:
+      - Samling i Tegnérlunden vid Strindbergsmonumentet. Biljett Stadsmuseet.
+
+  - slug: kungstradgarden
+    title: ”Här... erbjuds det vackraste Stockholm har att visa...”
+    body: >
+      <strong class="event-name">Kungsträdgården</strong> – med utsikt mot Söder och omgiven av ett kulturliv med restauranger, teatrar och därtill bostäder – centrum för kulturlivet - gav upphov till många avgörande händelser och möten i författarens liv.
+    dates:
+      - date: "2025-07-05"
+    time:
+      value: "14:00"
+      suffix: "(–15:30)"
+    info:
+      - Samling Kungsträdgården vid Karl XII staty.
+
+  - slug: djurgarden
+    title: ”... härd för myggor och spindlar”
+    body: >
+      <strong class="event-name">Djurgården</strong> är fylld av platser från Strindbergs liv och verk. Tidvis förlades boende, morgonpromenader och arbetsgömmen hit. Skådeplats för författarens kulturhistoriska gärningar och "introduktion" i krogarnas nöjesliv.
+    dates:
+      - date: "2025-07-12"
+    time:
+      value: "14:00"
+      suffix: "(–15:30)"
+    info:
+      - Samling Djurgårdsbron/Strandvägen.
+
+  - slug: strindbergsfejden
+    title: ”När världen gjort bankrutt... då kanske!!”
+    body: >
+      Strindberg var mycket medveten om betydelsen av tidningsvärlden. Det var alltså logiskt att ha vände sig till pressen, framförallt arbetarpressen som tog emot med öppna armar, när han skulle utkämpa sin sista strid - <strong class="event-name">Strindbergsfejden</strong>.
+    dates:
+      - date: "2025-07-24"
+      - date: "2025-08-21"
+    time:
+      value: "17:30"
+    info:
+      - Samling utanför Drottninggatan 83. Biljett Stadsmuseet.
+
   - slug: gamla_stan
     title: ”I ett gammalt hus vid Riddarholmen...”
     body: >
       Författarens födelseplats i samma hus – nu rivet – som faderns arbetsplats. Här fanns simskola och ”Midsommar”s kaj för skutornas färd på Mälaren. Här samlade han miljöer och personer till sitt framtida diktande. I <strong class="event-name">Gamla Stan</strong> övade han umgänge med skrivande och böcker och här utspelas flera ungdomsverk.
     dates:
-      - date: "2024-07-06"
+      - date: "2025-07-26"
     time:
       value: "14:00"
+      suffix: "(–15:30)"
     info:
       - Samling Evert Taubes Terrass på Riddarholmen.
 
@@ -16,51 +64,43 @@ walks:
       <img src="img/katarina.jpg" alt="">
       Inledningen av succéromanen ”Röda Rummet” – ett målande panorama över en älskad stad – är det mest kända av författarens <strong class="event-name">Södermalm</strong>. Men här finns också Vita Bergen, Hornstull, Hornsgatan, Swedenborg och Bellman.
     dates:
-      - date: "2024-07-27"
+      - date: "2025-08-02"
     time:
       value: "14:00"
     info:
       - Samling Mariatorget vid Swedenborgs staty.
 
-  - slug: strindbergsfejden
-    title: ”När världen gjort bankrutt... då kanske!!”
+  - slug: ostermalm
+    title: Här rivs för att få luft och ljus”
     body: >
-      Strindberg var mycket medveten om betydelsen av tidningsvärlden. Det var alltså logiskt att ha vände sig till pressen, framförallt arbetarpressen som tog emot med öppna armar, när han skulle utkämpa sin sista strid - <strong class="event-name">Strindbergsfejden</strong>.
+      <strong class="event-name">Östermalm</strong> Östermalm beboddes av författaren många gånger. Här inträffade dramatiska händelser både i hans litteratur och liv. Här skapades bla "Ett Drömspel", genomlevdes äktenskapet med Harriet Bosse och här blommade Beethoven-febern.
     dates:
-      - date: "2024-08-10"
+      - date: "2025-08-09"
     time:
       value: "14:00"
+      suffix: "(–15:30)"
     info:
-      - Samling utanför Drottninggatan 83.
+      - Samling Strandvägen – hörnet Grev Magnigatan.
 
-  - slug: morgonpromenad
-    title: ”Morgonen har något med sig som ger ungdom i sinnet”
+  - slug: bergman
+    title: ”... det är tur att Strindberg finns.”
     body: >
-      Vi vandrar Strindbergs <strong class="event-name">morgonpromenad</strong> – möter människor på Drottninggatans ”trottoar”, viker av ”i Fredsgatans halvdunkel” och vidare genom den händelserika Kungsträdgården och ”löpgraven”, Arsenalsgatan, fram till ”en nationell bildningsanstalt” och ”Stockholms ungkarlsklubb”.
+      <strong class="event-name">August Strindberg och Ingmar Bergman.</strong> Bergman påstår att "om man lever i en Strindbergtradition, så andas man Strindbergluft". Detta manifesteras på många sätt i hans flera av hans uppsättningar och vid han bostad på Karlaplan. På denna vandring korsas Strindberg och Bergman i konst och liv från Dramaten till Karlaplan.
     dates:
-      - date: "2024-08-17"
-    time:
-      value: "07:00"
-    info:
-      - Samling i Tegnérlunden vid Strindbergsmonumentet.
-
-  - slug: teaterstad
-    title: ”... vi råkas på något sätt, i Hvita Huset vid Nybroplan...”
-    body: >
-      Stockholm var under Strindbergs tid en mycket <strong class="event-name">teatertät stad</strong>, där hans verk hade både jublande framgångar och kaotiska motgångar. Här var de omskrivna urpremiärerna på bland annat ”Mäster Olof och ”Ett drömspel”. Här presenterades den intima scenen samtidigt som filmen tog sina första stapplande steg.
-    dates:
-      - date: "2024-08-17"
+      - date: "2025-08-16"
     time:
       value: "14:00"
+      suffix: "(–16:00)"
     info:
-      - Samling utanför Intima teatern på Norra Bantorget.
+      - Samling stora trappan framför Dramaten.
+      - Ciceron också Bergman-kännaren Marie Nyreröd.
 
   - slug: stora_landsvagen
     title: ”Jag är icke; blott vad jag gjort, det är!”
     body: >
       Vandringen följer Strindbergs sista färd 19 maj 1912 från bostaden i Blå Tornet till graven på Norra kyrkogården ”icke i de rikas kvarter på fåfängans marknad” och passerar första hustruns grav. En vandring i försoningsdramat ”<strong class="event-name">Stora Landsvägen</strong>”s texter.
     dates:
-      - date: "2024-08-24"
+      - date: "2025-08-23"
     time:
       value: "14:00"
     info:
@@ -73,7 +113,7 @@ excursions:
       <img src="img/anita_kymmendo.jpg" alt="">
       Strindbergs sinnebild för skärgården kan välgrundat anses vara <strong class="event-name">Kymendö, Hemsö</strong>. Hit flydde han i fadersuppror för att skriva och odla och för att njuta av samvaron med sin första familj och vänner. Vandringen över ön går i ”Hemsöbornas” texter och hus i författarens liv.
     dates:
-      - date: "2024-07-13"
+      - date: "2025-06-28"
     time:
       prefix: ca kl
       value: "11:00"
@@ -88,24 +128,9 @@ excursions:
       <img src="img/anita_furusund.jpg" alt="">
       <strong class="event-name">Furusund</strong> blev Strindbergs sista skärgårdsglädje, som satte många avtryck i hans litteratur. Här möter den legendariske skaparen av Furusund, samlaren Christian Hammer. Från glödande optimism till djupaste vemod sommarlevde författaren i hyrda rum eller hus – ensam eller med familj, släkt och vänner.
     dates:
-      - date: "2024-07-20"
+      - date: "2025-07-19"
     time:
       value: "14:00"
     info:
       - Samling vid ångbåtsbryggan i Furusund.
       - I samarbete med Furusunds kulturförening.
-
-  - slug: runmarö
-    title: ”... allt under det jag rustar till en dikt om Silverträsket”
-    body: >
-      Strindberg återkom för några år 1889 till Sverige och tillbringar tre somrar på <strong class="event-name">Runmarö</strong>. Vistelserna präglades av skilsmässan från första hustrun och oron för barnen men också av experiment, fantasifulla teorier och arbetslust.
-    dates:
-      - date: "2024-08-03"
-    time:
-      prefix: ca kl
-      value: "9:30"
-      suffix: ", när båt från Stavsnäs anlänt."
-    info:
-      - Samling Runmarö, Långviks brygga.
-      - Medtag matsäck!
-      - I samarbete med Runmarö hembygdsförening.
