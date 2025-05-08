@@ -8,7 +8,8 @@ walks:
     time:
       value: "07:00"
     info:
-      - Samling i Tegnérlunden vid Strindbergsmonumentet. Biljett Stadsmuseet.
+      - Samling i Tegnérlunden vid Strindbergsmonumentet.
+      - <strong>OBS! Biljett Stadsmuseet.</strong>
 
   - slug: kungstradgarden
     title: ”Här... erbjuds det vackraste Stockholm har att visa...”
@@ -37,7 +38,7 @@ walks:
   - slug: strindbergsfejden
     title: ”När världen gjort bankrutt... då kanske!!”
     body: >
-      Strindberg var mycket medveten om betydelsen av tidningsvärlden. Det var alltså logiskt att ha vände sig till pressen, framförallt arbetarpressen som tog emot med öppna armar, när han skulle utkämpa sin sista strid - <strong class="event-name">Strindbergsfejden</strong>.
+      Strindberg var mycket medveten om betydelsen av tidningsvärlden. Det var alltså logiskt att han vände sig till pressen, framförallt arbetarpressen som tog emot med öppna armar, när han skulle utkämpa sin sista strid – <strong class="event-name">Strindbergsfejden</strong>.
     dates:
       - date: "2025-07-24"
       - date: "2025-08-21"
@@ -45,6 +46,7 @@ walks:
       value: "17:30"
     info:
       - Samling utanför Drottninggatan 83. Biljett Stadsmuseet.
+      - <strong>OBS! Biljett Stadsmuseet.</strong>
 
   - slug: gamla_stan
     title: ”I ett gammalt hus vid Riddarholmen...”
@@ -85,7 +87,7 @@ walks:
   - slug: bergman
     title: ”... det är tur att Strindberg finns.”
     body: >
-      <strong class="event-name">August Strindberg och Ingmar Bergman.</strong> Bergman påstår att "om man lever i en Strindbergtradition, så andas man Strindbergluft". Detta manifesteras på många sätt i hans flera av hans uppsättningar och vid han bostad på Karlaplan. På denna vandring korsas Strindberg och Bergman i konst och liv från Dramaten till Karlaplan.
+      <strong class="event-name">August Strindberg och Ingmar Bergman.</strong> Bergman påstår att "om man lever i en Strindbergtradition, så andas man Strindbergluft". Detta manifesteras på många sätt i flera av hans uppsättningar och vid han bostad på Karlaplan. På denna vandring korsas Strindberg och Bergman i konst och liv från Dramaten till Karlaplan.
     dates:
       - date: "2025-08-16"
     time:
