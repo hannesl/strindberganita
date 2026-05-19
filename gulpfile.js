@@ -4,13 +4,13 @@ var handlebars = require("gulp-compile-handlebars");
 var rename = require("gulp-rename");
 var fs = require("fs");
 var moment = require("moment");
-var sass = require("gulp-sass");
+var sass = require("gulp-sass")(require("sass"));
 var compass = require("compass-importer");
 
 moment.locale("sv");
 
 gulp.task("template", function () {
-  var templateData = yaml.safeLoad(fs.readFileSync("src/data.yml", "utf-8"));
+  var templateData = yaml.load(fs.readFileSync("src/data.yml", "utf-8"));
 
   var processEvent = function (event) {
     event.dates = event.dates.map(function (date) {
@@ -42,8 +42,8 @@ gulp.task("sass", function () {
 });
 
 gulp.task("watch", function () {
-  gulp.watch("src/*", ["template"]);
-  gulp.watch("sass/*.scss", ["sass"]);
+  gulp.watch("src/*", gulp.series("template"));
+  gulp.watch("sass/*.scss", gulp.series("sass"));
 });
 
-gulp.task("default", ["watch", "template", "sass"]);
+gulp.task("default", gulp.series(gulp.parallel("template", "sass"), "watch"));
