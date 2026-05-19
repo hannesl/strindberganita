@@ -19,14 +19,18 @@ This is a one-page website with some JS navigation. It is built with
 You need [Node](https://nodejs.org) installed. Then you can install the
 dependencies by running the following in this directory:
 
-    npm install
+    yarn install
 
 For the deploy script to work, you also need to install
 [s3cmd](http://s3tools.org/s3cmd).
 
 ## Building
 
-Just run `gulp` in this directory. The final web files will end up in `dist/`.
+Just run local gulp in this directory:
+
+    ./node_modules/.bin/gulp
+
+The final web files will end up in `dist/`.
 Gulp will keep running and watch for changes as you work on the source files.
 When your done, stop it with Ctrl-C.
 
