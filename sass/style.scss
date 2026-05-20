@@ -46,7 +46,8 @@ header {
   }
   .intro {
   }
-  p {
+  p, address {
+    font-style: normal;
   }
   @media only screen and (min-width: 480px) {
     h1 {
@@ -92,7 +93,7 @@ header {
   }
 }
 
-section h1 {
+section h2 {
   font-size: 1.6em;
 }
 
@@ -101,8 +102,6 @@ section h1 {
 #excursions {
   @include fancy-border-top();
   margin: 1em 0;
-  h1 {
-  }
 }
 
 .walks-wreath {
@@ -234,7 +233,7 @@ section h1 {
       display: block;
     }
 
-    h3 {
+    h4 {
       font-size: 1em;
       margin: 0;
       white-space: nowrap;
@@ -346,7 +345,7 @@ section h1 {
 }
 
 .event-description {
-  h1 {
+  h3 {
     font-size: 1.2em;
     font-style: italic;
     font-weight: normal;

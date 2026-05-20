@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="sv" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -38,9 +38,9 @@
         gymnasieklassen.<br>
         <em>Ja, det finns en Strindbergsstund för alla och för alla tillfällen.</em></p>
 
-      <p class="intro-contact">Information om programmet:<br>Anita Persson, tel <a
+      <p><address class="intro-contact">Information om programmet:<br>Anita Persson, tel <a
           href="tel:+46702746711">070‑2746711</a>,<br>epost <a
-          href="mailto:anita_s_persson@hotmail.com">anita_s_persson@hotmail.com</a></p>
+          href="mailto:anita_s_persson@hotmail.com">anita_s_persson@hotmail.com</a></address></p>
 
       <nav id="navigation">
         <ul>
@@ -56,7 +56,7 @@
     <div class="main wrapper">
 
       <section id="walks-intro">
-        <h1>Vandringar</h1>
+        <h2>Vandringar</h2>
         <p>Att exempelvis tillsammans vandra genom den kända eller okända staden där författaren vandrat, där dikterna
           tillkommit, där dramat utspelar sig, ger nya perspektiv och berikar läsupplevelser och ”vardagsvandringar”.
         </p>
@@ -72,19 +72,21 @@
       </section>
 
       <section id="walks">
-        <h1>Stadsvandringar</h1>
+        <h2>Stadsvandringar</h2>
 
         {{#each walks as |walk|}}
         {{#with walk}}
-        <article id="{{slug}}" class="event-description event-type-walk">
-          <h1>{{title}}</h1>
-          {{{body}}}
+        <article id="{{slug}}" class="event-description event-type-walk" itemscope itemtype="https://schema.org/Event">
+          <h3 itemprop="name">{{title}}</h3>
+          <div itemprop="description">
+            {{{body}}}
+          </div>
 
           <footer>
             <label>Datum:</label>
             <ul class="dates">
               {{#each dates}}
-              <li><time datetime="{{this.date}}">{{this.formatted}}</time> {{this.description}}</li>
+              <li><time datetime="{{this.date}}" itemprop="startDate">{{this.formatted}}</time> {{this.description}}</li>
               {{/each}}
             </ul>
 
@@ -104,19 +106,21 @@
       </section>
 
       <section id="excursions">
-        <h1>Utflykter</h1>
+        <h2>Utflykter</h2>
 
         {{#each excursions as |excursion|}}
         {{#with excursion}}
-        <article id="{{slug}}" class="event-description event-type-excursion">
-          <h1>{{title}}</h1>
-          {{{body}}}
+        <article id="{{slug}}" class="event-description event-type-excursion" itemscope itemtype="https://schema.org/Event">
+          <h3 itemprop="name">{{title}}</h3>
+          <div itemprop="description">
+            {{{body}}}
+          </div>
 
           <footer>
             <label>Datum:</label>
             <ul class="dates">
               {{#each dates}}
-              <li><time datetime="{{this.date}}">{{this.formatted}}</time> {{this.description}}</li>
+              <li><time datetime="{{this.date}}" itemprop="startDate">{{this.formatted}}</time> {{this.description}}</li>
               {{/each}}
             </ul>
 
@@ -144,7 +148,7 @@
             <% for ( var i = 0; i < dates.length; i++ ) { %>
               <li class="<%=dates[i].elClass%>">
                 <a href="#<%=dates[i].event.id%>">
-                  <h3><time datetime="<%=dates[i].date%>"><%=dates[i].dateName%></time> <span class="event-name"><%=dates[i].event.name%></span></h3>
+                  <h4><time datetime="<%=dates[i].date%>"><%=dates[i].dateName%></time> <span class="event-name"><%=dates[i].event.name%></span></h4>
                   <em class="quote"><%=dates[i].event.quote%></em>
                 </a>
                 <div class="description"></div>
@@ -159,7 +163,7 @@
       </script>
 
       <section id="about">
-        <h1>Om Anita Persson</h1>
+        <h2>Om Anita Persson</h2>
 
         <p>Jag, Anita Persson, var, efter många års aktiviteter i Strindbergssällskapet, intendent på Strindbergsmuseet
           fram till 1994. Därefter är jag vida anlitad föreläsare/kåsör, vandrare och även skribent.</p>
@@ -170,7 +174,7 @@
           av utan också för att användas i våra dagliga liv i med- som motgångar, för att fylla på tankar, fantasier och
           möjligheter – som energi – som kunskap – som erfarenhet.</p>
 
-        <h2>Jag har också bland annat:</h2>
+        <h3>Jag har också bland annat:</h3>
         <ul>
           <li>föreläst på Grafiska sällskapet och i Nacka konstförening</li>
 

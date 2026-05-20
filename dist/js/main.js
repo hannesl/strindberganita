@@ -59,7 +59,7 @@
     event.el = this;
     event.name = $event.find(".event-name").text();
     event.name = event.name.charAt(0).toUpperCase() + event.name.slice(1);
-    event.quote = $event.find("h1").first().text();
+    event.quote = $event.find("h3").first().text();
     event.time = $event.find("footer p time").attr("datetime");
     event.id = $event.attr("id");
 

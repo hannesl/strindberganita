@@ -749,6 +749,9 @@ header h1 span {
   font-style: italic;
   line-height: 0.7em;
 }
+header p, header address {
+  font-style: normal;
+}
 @media only screen and (min-width: 480px) {
   header h1 {
     font-size: 2.4em;
@@ -790,7 +793,7 @@ header h1 span {
   display: none;
 }
 
-section h1 {
+section h2 {
   font-size: 1.6em;
 }
 
@@ -809,6 +812,7 @@ section h1 {
 #excursions {
   margin: 1em 0;
 }
+
 .walks-wreath {
   position: relative;
   float: right;
@@ -945,12 +949,12 @@ section h1 {
   color: #333;
   display: block;
 }
-#timeline li.date h3 {
+#timeline li.date h4 {
   font-size: 1em;
   margin: 0;
   white-space: nowrap;
 }
-#timeline li.date h3 time {
+#timeline li.date h4 time {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1094,7 +1098,7 @@ section h1 {
   }
 }
 
-.event-description h1 {
+.event-description h3 {
   font-size: 1.2em;
   font-style: italic;
   font-weight: normal;
