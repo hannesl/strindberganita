@@ -7,7 +7,7 @@ This is a static one-page website built with Gulp, Handlebars, and Sass.
 - **Build Tool:** Gulp 4 (`./node_modules/.bin/gulp`).
 - **Content:** `src/data.yml` (Source of truth for events/walks).
 - **Styling:** Sass (using `compass-importer` and Dart Sass).
-- **Deployment:** `bash deploy.sh` (Requires `s3cmd`).
+- **Deployment:** Push main to GitHub to automatically deploy to GitHub Pages.
 
 ## Development Guidelines
 - **Build Target:** All generated files go to `dist/`. Never edit files in `dist/` directly.

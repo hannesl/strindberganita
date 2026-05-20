@@ -21,9 +21,6 @@ dependencies by running the following in this directory:
 
     yarn install
 
-For the deploy script to work, you also need to install
-[s3cmd](http://s3tools.org/s3cmd).
-
 ## Building
 
 Just run local gulp in this directory:
@@ -36,6 +33,4 @@ When your done, stop it with Ctrl-C.
 
 ## Deploying
 
-Run the deploy script in this directory:
-
-    bash deploy.sh
+Push to GitHub and let the [workflow](.github/workflows/deploy.yml) deploy `dist` to the `gh-pages` branch.
